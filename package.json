@@ -2,7 +2,10 @@
   "name": "@qwik-books-projects/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "chapter-01": "npx nx serve 01-first-steps",
+    "chapter-02": "npx nx serve 02-routing"
+  },
   "private": true,
   "dependencies": {
     "qwik-nx": "1.0.8"

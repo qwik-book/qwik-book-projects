@@ -5,16 +5,16 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/apps/qwik-books-projects',
+  cacheDir: '../../node_modules/.vite/apps/02-routing',
   plugins: [
     qwikNxVite(),
     qwikCity(),
     qwikVite({
       client: {
-        outDir: '../../dist/apps/qwik-books-projects/client',
+        outDir: '../../dist/apps/02-routing/client',
       },
       ssr: {
-        outDir: '../../dist/apps/qwik-books-projects/server',
+        outDir: '../../dist/apps/02-routing/server',
       },
     }),
     tsconfigPaths({ root: '../../' }),

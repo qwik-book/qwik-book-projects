@@ -1,17 +1,14 @@
 {
-  "name": "qwik-books-projects",
+  "name": "02-routing",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/qwik-books-projects/src",
+  "sourceRoot": "apps/02-routing/src",
   "targets": {
     "build": {
       "executor": "qwik-nx:build",
       "options": {
-        "runSequence": [
-          "qwik-books-projects:build.client",
-          "qwik-books-projects:build.ssr"
-        ],
-        "outputPath": "dist/apps/qwik-books-projects"
+        "runSequence": ["02-routing:build.client", "02-routing:build.ssr"],
+        "outputPath": "dist/apps/02-routing"
       },
       "configurations": {
         "preview": {}
@@ -20,15 +17,15 @@
     "build.client": {
       "executor": "@nx/vite:build",
       "options": {
-        "outputPath": "dist/apps/qwik-books-projects",
-        "configFile": "apps/qwik-books-projects/vite.config.ts"
+        "outputPath": "dist/apps/02-routing",
+        "configFile": "apps/02-routing/vite.config.ts"
       }
     },
     "build.ssr": {
       "executor": "@nx/vite:build",
       "defaultConfiguration": "preview",
       "options": {
-        "outputPath": "dist/apps/qwik-books-projects"
+        "outputPath": "dist/apps/02-routing"
       },
       "configurations": {
         "preview": {
@@ -40,22 +37,22 @@
     "preview": {
       "executor": "@nx/vite:preview-server",
       "options": {
-        "buildTarget": "qwik-books-projects:build",
+        "buildTarget": "02-routing:build",
         "port": 4300
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["../../coverage/apps/qwik-books-projects"],
+      "outputs": ["../../coverage/apps/02-routing"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/qwik-books-projects"
+        "reportsDirectory": "../../coverage/apps/02-routing"
       }
     },
     "serve": {
       "executor": "@nx/vite:dev-server",
       "options": {
-        "buildTarget": "qwik-books-projects:build.client",
+        "buildTarget": "02-routing:build.client",
         "mode": "ssr",
         "port": 4200
       }
@@ -64,14 +61,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
-        "cwd": "apps/qwik-books-projects"
+        "cwd": "apps/02-routing"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/qwik-books-projects/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/02-routing/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

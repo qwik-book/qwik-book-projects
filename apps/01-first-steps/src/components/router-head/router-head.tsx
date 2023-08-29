@@ -16,16 +16,16 @@ export const RouterHead = component$(() => {
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-      {head.meta.map((m) => (
-        <meta {...m} />
+      {head.meta.map((m, index) => (
+        <meta key={index + '_meta'} {...m} />
       ))}
 
-      {head.links.map((l) => (
-        <link {...l} />
+      {head.links.map((l, index) => (
+        <link key={index + '_link'}  {...l} />
       ))}
 
-      {head.styles.map((s) => (
-        <style {...s.props} dangerouslySetInnerHTML={s.style} />
+      {head.styles.map((s, index) => (
+        <style key={index + '_styles'}  {...s.props} dangerouslySetInnerHTML={s.style} />
       ))}
     </>
   );
