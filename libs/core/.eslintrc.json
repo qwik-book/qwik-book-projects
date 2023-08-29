@@ -7,7 +7,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": ["apps/01-first-steps/tsconfig.*?.json"],
+    "project": ["libs/core/tsconfig.*?.json"],
     "ecmaVersion": 2021,
     "sourceType": "module",
     "ecmaFeatures": {
