@@ -1,0 +1,89 @@
+/**
+ * WHAT IS THIS FILE?
+ *
+ * Globally applied styles. No matter which components are in the page or matching route,
+ * the styles in here will be applied to the Document, without any sort of CSS scoping.
+ *
+ */
+
+:root {
+  --qwik-dark-blue: #006ce9;
+  --qwik-light-blue: #18b6f6;
+  --qwik-light-purple: #ac7ff4;
+  --qwik-dark-purple: #713fc2;
+}
+
+body {
+  background-color: rgb(106, 161, 118);
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    sans-serif;
+  padding: 20px 20px 40px 20px;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+p,
+h1 {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+  max-width: 600px;
+  min-width: 300px;
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  border: 1px solid rgb(195, 190, 219);
+  border-radius: 6px;
+}
+
+.container p {
+  color: #333;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.question {
+  width: 90%;
+  background: #dfe6e6;
+  margin-top: 10px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #90b9b9;
+  margin-right: 15px;
+}
+
+.question img {
+  width: 30%;
+}
+
+.answer {
+  text-align: center;
+  width: 90%;
+  background: #eaf3f3;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  margin-right: 15px;
+  box-shadow: 2px 2px #999;
+}
+
+.answer:hover {
+  background: rgb(195, 190, 219);
+  color: white;
+  cursor: pointer;
+}
+
+.answer:active {
+  background: rgb(124, 139, 124);
+  box-shadow: 2px 2px #666;
+  transform: translateY(4px);
+}
