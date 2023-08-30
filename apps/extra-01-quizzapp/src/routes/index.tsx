@@ -4,7 +4,7 @@ import { QUESTIONS } from '../data/world-flags-questions';
 
 export default component$(() => {
   const answers = useSignal<Array<any>>([]);
-  const question = useSignal<>(null);
+  const question = useSignal(null);
   const selectOption = $((option: string | number) => {
     console.log(option);
     // this.isCorrect = answers[option].isCorrect;
