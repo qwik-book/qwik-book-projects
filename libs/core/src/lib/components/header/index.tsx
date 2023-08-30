@@ -7,34 +7,69 @@ export default component$(() => {
 
   return (
     <header>
-      <div class="logo">
-        <a href="https://qwik.builder.io/" target="_blank">
+      <div class='logo'>
+        <a href='https://qwik.builder.io/' target='_blank'>
           <QwikLogo />
         </a>
       </div>
       <ul>
         <li>
           <a
-            href="https://qwik.builder.io/docs/components/overview/"
-            target="_blank"
+            href='https://anartz-mugika.com'
+            target='_blank'
+            title='Mi página personal'
           >
-            Docs
+            Página Personal
+          </a>
+        </li> / 
+        <li>
+          <a
+            href='https://twitter.com/mugan86'
+            target='_blank'
+            title='Twitter Anartz Mugika Ledo'
+          >
+            Twitter
+          </a>
+        </li> / 
+        <li>
+          <a
+            href='https://github.com/mugan86'
+            target='_blank'
+            title='Proyectos en Github'
+          >
+            Github
+          </a>
+        </li> / 
+        <li>
+          <a
+            href='https://github.com/qwik-book/qwik-book-projects'
+            target='_blank'
+            title='Proyectos en Github'
+          >
+            Repositorio Libro
+          </a>
+        </li> / 
+        <li>
+          <a href='https://youtube.com/mugan86' target='_blank' title='Youtube'>
+            Youtube
           </a>
         </li>
         <li>
           <a
-            href="https://qwik.builder.io/examples/introduction/hello-world/"
-            target="_blank"
+            href='https://udemy.com/user/anartzmugika'
+            target='_blank'
+            title='Cursos Online Anartz Mugika'
           >
-            Examples
+            Udemy
           </a>
-        </li>
+        </li> / 
         <li>
           <a
-            href="https://qwik.builder.io/tutorial/welcome/overview/"
-            target="_blank"
+            href='https://mugan86.medium.com/'
+            target='_blank'
+            title='Artículos técnicos sobre Angular, Qwik, Python,...'
           >
-            Tutorials
+            Blog Tech - Medium
           </a>
         </li>
       </ul>

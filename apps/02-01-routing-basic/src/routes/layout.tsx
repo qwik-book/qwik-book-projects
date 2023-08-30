@@ -8,10 +8,7 @@ export default component$(() => {
       <main>
         <Header />
         <section>
-          <h2>Curso Qwik - Primeros pasos</h2>
-          <div style='border: 3px dotted green; margin: 1rem; padding: 1rem'>
-            <Slot />
-          </div>
+          <Slot />
         </section>
       </main>
       <Footer />

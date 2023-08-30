@@ -5,7 +5,8 @@
   "scripts": {
     "base": "npx nx serve 00-base",
     "chapter-01": "npx nx serve 01-first-steps",
-    "chapter-02": "npx nx serve 02-routing",
+    "chapter-02:basic": "npx nx serve 02-01-routing-basic",
+    "chapter-02:markdown": "npx nx serve 02-02-routing-markdown",
     "create:app": "npx nx g qwik-nx:application",
     "create:library": "npx nx g qwik-nx:lib"
   },
