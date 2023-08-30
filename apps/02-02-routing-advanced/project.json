@@ -1,14 +1,14 @@
 {
-  "name": "02-02-routing-markdown",
+  "name": "02-02-routing-advanced",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/02-02-routing-markdown/src",
+  "sourceRoot": "apps/02-02-routing-advanced/src",
   "targets": {
     "build": {
       "executor": "qwik-nx:build",
       "options": {
-        "runSequence": ["02-02-routing-markdown:build.client", "02-02-routing-markdown:build.ssr"],
-        "outputPath": "dist/apps/02-02-routing-markdown"
+        "runSequence": ["02-02-routing-advanced:build.client", "02-02-routing-advanced:build.ssr"],
+        "outputPath": "dist/apps/02-02-routing-advanced"
       },
       "configurations": {
         "preview": {}
@@ -17,15 +17,15 @@
     "build.client": {
       "executor": "@nx/vite:build",
       "options": {
-        "outputPath": "dist/apps/02-02-routing-markdown",
-        "configFile": "apps/02-02-routing-markdown/vite.config.ts"
+        "outputPath": "dist/apps/02-02-routing-advanced",
+        "configFile": "apps/02-02-routing-advanced/vite.config.ts"
       }
     },
     "build.ssr": {
       "executor": "@nx/vite:build",
       "defaultConfiguration": "preview",
       "options": {
-        "outputPath": "dist/apps/02-02-routing-markdown"
+        "outputPath": "dist/apps/02-02-routing-advanced"
       },
       "configurations": {
         "preview": {
@@ -37,22 +37,22 @@
     "preview": {
       "executor": "@nx/vite:preview-server",
       "options": {
-        "buildTarget": "02-02-routing-markdown:build",
+        "buildTarget": "02-02-routing-advanced:build",
         "port": 4300
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["../../coverage/apps/02-02-routing-markdown"],
+      "outputs": ["../../coverage/apps/02-02-routing-advanced"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/02-02-routing-markdown"
+        "reportsDirectory": "../../coverage/apps/02-02-routing-advanced"
       }
     },
     "serve": {
       "executor": "@nx/vite:dev-server",
       "options": {
-        "buildTarget": "02-02-routing-markdown:build.client",
+        "buildTarget": "02-02-routing-advanced:build.client",
         "mode": "ssr",
         "port": 4200
       }
@@ -61,14 +61,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
-        "cwd": "apps/02-02-routing-markdown"
+        "cwd": "apps/02-02-routing-advanced"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/02-02-routing-markdown/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/02-02-routing-advanced/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

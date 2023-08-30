@@ -7,7 +7,7 @@
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": ["apps/02-02-routing-markdown/tsconfig.*?.json"],
+    "project": ["apps/02-02-routing-advanced/tsconfig.*?.json"],
     "ecmaVersion": 2021,
     "sourceType": "module",
     "ecmaFeatures": {
