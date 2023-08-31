@@ -7,7 +7,16 @@ Información acerca del libro.
 ## English
 
 Info about book
-# QwikBooksProjects
+
+## Añadir una nueva app con la estructura base
+
+1. Copiamos el directorio `apps/00-base` y pegamos dentro de `apps`.
+2. Cambiamos el nombre del directorio, por ejemplo `nuevo-proyecto`.
+3. En base a este nuevo nombre, debemos de modificar las configuraciones de los ficheros `vite.config.ts`, `package.json`, `project.json` y `.eslintrc.json` modificando todas las coincidencias del texto `00-base` sustituyéndolo por `nuevo-proyecto`.
+4. Definimos en el nuevo script en fichero `package.json` de la raíz del monorepositorio para poder definir la ejecución del proyecto seleccionado con: `"nuevo-proyecto": "npx nx serve nuevo-proyecto"`.
+5. Desarrollamos las funcionalidades que necesitamos y para ir viendo los progresos, ejecutamos `npm run nuevo-proyecto` y entraremos a la URL que se nos asigne.
+
+## QwikBooksProjects
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
