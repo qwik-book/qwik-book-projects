@@ -7,8 +7,8 @@
     "chapter-01": "npx nx serve 01-first-steps",
     "chapter-02:basic": "npx nx serve 02-01-routing-basic",
     "chapter-02:advanced": "npx nx serve 02-02-routing-advanced",
-    "chapter-03:wildcard": "npx nx serve 02-03-routing-wildcard",
-    "chapter-04:grouped": "npx nx serve 02-04-routing-grouped",
+    "chapter-02:wildcard": "npx nx serve 02-03-routing-wildcard",
+    "chapter-02:grouped": "npx nx serve 02-04-routing-grouped",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
     "create:app": "npx nx g qwik-nx:application",
     "create:library": "npx nx g qwik-nx:lib"
