@@ -1,14 +1,14 @@
 {
-  "name": "extra-01-quizzapp",
+  "name": "extra-01-quizapp",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/extra-01-quizzapp/src",
+  "sourceRoot": "apps/extra-01-quizapp/src",
   "targets": {
     "build": {
       "executor": "qwik-nx:build",
       "options": {
-        "runSequence": ["extra-01-quizzapp:build.client", "extra-01-quizzapp:build.ssr"],
-        "outputPath": "dist/apps/extra-01-quizzapp"
+        "runSequence": ["extra-01-quizapp:build.client", "extra-01-quizapp:build.ssr"],
+        "outputPath": "dist/apps/extra-01-quizapp"
       },
       "configurations": {
         "preview": {}
@@ -17,15 +17,15 @@
     "build.client": {
       "executor": "@nx/vite:build",
       "options": {
-        "outputPath": "dist/apps/extra-01-quizzapp",
-        "configFile": "apps/extra-01-quizzapp/vite.config.ts"
+        "outputPath": "dist/apps/extra-01-quizapp",
+        "configFile": "apps/extra-01-quizapp/vite.config.ts"
       }
     },
     "build.ssr": {
       "executor": "@nx/vite:build",
       "defaultConfiguration": "preview",
       "options": {
-        "outputPath": "dist/apps/extra-01-quizzapp"
+        "outputPath": "dist/apps/extra-01-quizapp"
       },
       "configurations": {
         "preview": {
@@ -37,22 +37,22 @@
     "preview": {
       "executor": "@nx/vite:preview-server",
       "options": {
-        "buildTarget": "extra-01-quizzapp:build",
+        "buildTarget": "extra-01-quizapp:build",
         "port": 4300
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["../../coverage/apps/extra-01-quizzapp"],
+      "outputs": ["../../coverage/apps/extra-01-quizapp"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/extra-01-quizzapp"
+        "reportsDirectory": "../../coverage/apps/extra-01-quizapp"
       }
     },
     "serve": {
       "executor": "@nx/vite:dev-server",
       "options": {
-        "buildTarget": "extra-01-quizzapp:build.client",
+        "buildTarget": "extra-01-quizapp:build.client",
         "mode": "ssr",
         "port": 4200
       }
@@ -61,14 +61,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
-        "cwd": "apps/extra-01-quizzapp"
+        "cwd": "apps/extra-01-quizapp"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/extra-01-quizzapp/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/extra-01-quizapp/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

@@ -1,13 +1,15 @@
 import { component$, useSignal, useTask$, $ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 import { QUESTIONS } from '../data/world-flags-questions';
+import { Image, Alert } from '@qwik-books-projects/shared';
 
 export default component$(() => {
   const answers = useSignal<Array<any>>([]);
   const question = useSignal(null);
-  const selectOption = $((option: string | number) => {
-    console.log(option);
-    // this.isCorrect = answers[option].isCorrect;
+  const isCorrect = useSignal(null);
+  const selectOption = $((option: number) => {
+    console.log(option, answers.value[option].isCorrect);
+    isCorrect.value = answers.value[option].isCorrect;
   });
 
   const answerOrderDefine = $(() => {
@@ -32,23 +34,31 @@ export default component$(() => {
     console.log(QUESTIONS[selectQuestion].content);
     question.value = QUESTIONS[selectQuestion];
   });
+
   return (
     <div>
       <h1> Flag Quiz</h1>
       <p>El juego consiste en seleccionar una opción válida</p>
+      <br />
       {question.value ? (
         <div class='container'>
           <div class='question'>
-            <img src={question.value['content']} />
+            <Image
+              src={question.value['content']}
+              size={{ width: 147, height: 110 }}
+              alt={'¿De dónde es la bandera'}
+            />
           </div>
+          {isCorrect.value ? (
+            <Alert text={'¡Qué bien, has acertado!'} type='success'/>
+          ) : isCorrect.value === false ? (
+            <Alert text={'¡Lo siento, NO has acertado!'} type='danger'/>
+          ) : undefined}
           {answers.value.length
             ? answers.value.map((item, index) => {
                 return (
-                  <div class='flex-container'>
-                    <div
-                      class='answer'
-                      onClick$={() => console.log('click ', index)}
-                    >
+                  <div class='flex-container' key={'answer_' + index}>
+                    <div class='answer' onClick$={() => selectOption(index)}>
                       {item['content']}
                     </div>
                   </div>
