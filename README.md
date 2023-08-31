@@ -10,6 +10,8 @@ Info about book
 
 ## Añadir una nueva app con la estructura base
 
+Con `Nx` al crear la aplicación nos viene con estilos y rutas que no queremos y por esa razón en creado una versión minimalista donde ya tenemos configurado los estilos con lo básico. Esto sería como si fuese la opción `Empty App` desde el CLI de `Qwik` que así facilita el desarrollo de las apps comenzando con contenido más amoldable a cualquier propósito:
+
 1. Copiamos el directorio `apps/00-base` y pegamos dentro de `apps`.
 2. Cambiamos el nombre del directorio, por ejemplo `nuevo-proyecto`.
 3. En base a este nuevo nombre, debemos de modificar las configuraciones de los ficheros `vite.config.ts`, `package.json`, `project.json` y `.eslintrc.json` modificando todas las coincidencias del texto `00-base` sustituyéndolo por `nuevo-proyecto`.
