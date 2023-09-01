@@ -9,6 +9,7 @@
     "chapter-02:advanced": "npx nx serve 02-02-routing-advanced",
     "chapter-02:wildcard": "npx nx serve 02-03-routing-wildcard",
     "chapter-02:grouped": "npx nx serve 02-04-routing-grouped",
+    "chapter-03": "npx nx serve 03-components",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
     "create:app": "npx nx g qwik-nx:application",
     "create:library": "npx nx g qwik-nx:lib"
