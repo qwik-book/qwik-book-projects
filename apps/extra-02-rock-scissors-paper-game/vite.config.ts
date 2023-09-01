@@ -3,23 +3,21 @@ import { qwikCity } from '@builder.io/qwik-city/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
-import { qwikReact } from '@builder.io/qwik-react/vite';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/apps/20-react-integration',
+  cacheDir: '../../node_modules/.vite/apps/extra-02-rock-scissors-paper-game',
   plugins: [
     qwikNxVite(),
     qwikCity(),
     qwikVite({
       client: {
-        outDir: '../../dist/apps/20-react-integration/client',
+        outDir: '../../dist/apps/extra-02-rock-scissors-paper-game/client',
       },
       ssr: {
-        outDir: '../../dist/apps/20-react-integration/server',
+        outDir: '../../dist/apps/extra-02-rock-scissors-paper-game/server',
       },
     }),
-    tsconfigPaths({ root: '../../' }),
-    qwikReact()
+    tsconfigPaths({ root: '../../' })
   ],
   server: {
     fs: {

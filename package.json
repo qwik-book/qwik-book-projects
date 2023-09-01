@@ -11,20 +11,21 @@
     "chapter-02:grouped": "npx nx serve 02-04-routing-grouped",
     "chapter-03": "npx nx serve 03-components",
     "chapter-07": "npx nx serve 07-ssr",
+    "chapter-20": "npx nx serve 20-react-integration",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
+    "extra:rock.scissors.paper": "npx nx serve extra-02-rock-scissors-paper-game",
     "create:app": "npx nx g qwik-nx:application",
     "create:library": "npx nx g qwik-nx:lib"
   },
   "private": true,
   "dependencies": {
     "qwik-nx": "1.0.8",
-    "@builder.io/qwik-react": "^0.5.0",
-    "@types/react": "^18.2.21",
-    "@types/react-dom": "^18.2.7",
-    "date-fns": "^2.30.0",
-    "react": "^18.2.0",
-    "react-day-picker": "^8.8.1",
-    "react-dom": "^18.2.0"
+    "react-day-picker": "8.8.1",
+    "@builder.io/qwik-react": "0.5.0",
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "engines": {
     "node": ">=15.0.0"
@@ -37,7 +38,7 @@
     "@nx/linter": "16.7.4",
     "@nx/vite": "16.7.4",
     "@nx/workspace": "16.7.4",
-    "@types/node": "^18.16.1",
+    "@types/node": "^20.5.7",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "@vitest/ui": "~0.32.0",
