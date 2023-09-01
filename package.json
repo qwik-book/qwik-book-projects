@@ -10,13 +10,21 @@
     "chapter-02:wildcard": "npx nx serve 02-03-routing-wildcard",
     "chapter-02:grouped": "npx nx serve 02-04-routing-grouped",
     "chapter-03": "npx nx serve 03-components",
+    "chapter-07": "npx nx serve 07-ssr",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
     "create:app": "npx nx g qwik-nx:application",
     "create:library": "npx nx g qwik-nx:lib"
   },
   "private": true,
   "dependencies": {
-    "qwik-nx": "1.0.8"
+    "qwik-nx": "1.0.8",
+    "@builder.io/qwik-react": "^0.5.0",
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "date-fns": "^2.30.0",
+    "react": "^18.2.0",
+    "react-day-picker": "^8.8.1",
+    "react-dom": "^18.2.0"
   },
   "engines": {
     "node": ">=15.0.0"
