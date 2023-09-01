@@ -8,13 +8,13 @@ import { Hobbies } from './../components/hobbies';
 // Componente principal
 export default component$(() => {
   return (
-    <>
-      <Title greetingText={'Hola'} name={'Anartz'}/>
+    <div style='border: 3px dotted purple; padding: 10px'>
+      <Title greetingText={'Hola'} name={'Anartz'} />
       <br />
-      <Age age={37}/>
-      <Hobbies hobbiesList={['leer', 'deporte', 'videojuegos']}/>
-      <Title greetingText={'Adios'} name={'Qwik'}/>
-    </>
+      <Age age={37} />
+      <Hobbies hobbiesList={['leer', 'deporte', 'videojuegos']} />
+      <Title greetingText={'Adios'} name={'Qwik'} />
+    </div>
   );
 });
 

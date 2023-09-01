@@ -54,7 +54,7 @@
       "options": {
         "buildTarget": "01-first-steps:build.client",
         "mode": "ssr",
-        "port": 4200
+        "port": 5173
       }
     },
     "serve.debug": {

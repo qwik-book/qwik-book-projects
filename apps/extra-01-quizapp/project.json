@@ -54,7 +54,7 @@
       "options": {
         "buildTarget": "extra-01-quizapp:build.client",
         "mode": "ssr",
-        "port": 4200
+        "port": 5173
       }
     },
     "serve.debug": {

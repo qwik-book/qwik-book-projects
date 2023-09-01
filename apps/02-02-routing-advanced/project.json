@@ -54,7 +54,7 @@
       "options": {
         "buildTarget": "02-02-routing-advanced:build.client",
         "mode": "ssr",
-        "port": 4200
+        "port": 5173
       }
     },
     "serve.debug": {

@@ -54,7 +54,7 @@
       "options": {
         "buildTarget": "00-base:build.client",
         "mode": "ssr",
-        "port": 4200
+        "port": 5173
       }
     },
     "serve.debug": {
