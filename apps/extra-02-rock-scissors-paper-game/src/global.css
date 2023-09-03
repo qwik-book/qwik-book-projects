@@ -20,3 +20,97 @@ body {
   padding: 20px 20px 40px 20px;
 }
 
+body{
+	background-color:#110F26;
+	color: white;
+}
+
+.choice img {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+/* Para ubicar las opciones de izquierda a derecha*/
+.choices {
+  margin: 10px;
+  display: flex; /* or inline-flex */
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100px;
+}
+.choice img {
+  width: 100px !important;
+  height: 100%;
+  background-color: white;
+  padding: 15px;
+  border: 4px solid #333333;
+  border-radius: 20px;
+}
+
+.choice img:hover{
+	cursor: pointer;
+    background-color:#86849d;
+}
+
+.choice img:active{
+    background-color:#626078;
+}
+
+.choice img {
+    width: 100px !important;
+    height: 100%;
+    background-color: white;
+    padding: 15px;
+    border: 4px solid #333333;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.title, .info-game {
+  width: 100%;
+  background: white;
+  color: #110F26;
+  padding: 20px;
+  text-align: center;
+}
+
+.info-game {
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+}
+
+/* Marcador */
+.score-board{
+	width: 200px;
+	border:2px solid white;
+	text-align: center;
+	margin:20px auto; /*top and bottom 20 px and centre it*/
+	padding: 20px 20px;
+	font-size: 40px;
+	position: relative;
+	transition: 0.3s ease-in;
+}
+.score-board:hover{
+	background-color: #323042;
+}
+.badge{
+	background-color: #3aa330;
+	padding: 2px 20px;
+	font-size: 20px;
+}
+#user-label{
+	position: absolute;
+	top:20px;
+	left: -30px;
+}
+#comp-label{
+	position: absolute;
+	top: 20px;
+	right: -45px;
+}
+.result{
+	font-size: 40px;
+	text-align: center;
+	color: white;
+}

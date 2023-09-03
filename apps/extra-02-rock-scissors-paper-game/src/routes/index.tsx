@@ -1,16 +1,50 @@
-import { component$ } from '@builder.io/qwik';
+import { component$, useStore } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { GameStore } from './../models/game';
+import Choices from './../components/game/choices';
+import { Title } from './../components/game/title';
+import { ScoreBoard } from './../components/game/score-board';
 
 export default component$(() => {
+  const game = useStore<GameStore>({
+    data: {
+      result: 'Waiting for the first play...',
+      pointsUser: 0,
+      pointsComp: 0,
+    },
+    choices: {
+      imageProperties: {
+        width: 100,
+        height: 100,
+      },
+      rock: {
+        img: '/img/rock.png',
+        alt: 'Rock Image',
+      },
+      paper: {
+        img: '/img/paper.png',
+        alt: 'Pape Image',
+      },
+      scissors: {
+        img: '/img/scissors.png',
+        alt: 'Scissors Image',
+      },
+    },
+  });
+
   return (
-    <div>
-      <h1>
-        Bienvenido a un nuevo proyecto de Qwik <span class="lightning">⚡️</span>
-      </h1>
-    </div>
+    <>
+      <Title />
+      <ScoreBoard user={game.data.pointsUser} computer={game.data.pointsComp} />
+
+      <p class='info-game'>{game.data.result}</p>
+
+      <Choices game={game} />
+
+      <p class='info-game'>Select your play</p>
+    </>
   );
 });
-
 export const head: DocumentHead = {
   title: "Qwik Book - Proyectos",
   meta: [
