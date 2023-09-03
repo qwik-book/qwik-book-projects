@@ -17,6 +17,7 @@
     "chapter-05:styled-components": "npx nx serve 05-05-styles-styled-components",
     "chapter-06:html-to-qwik-part-i": "npx nx serve 06-conversion-html-qwik-i",
     "chapter-07": "npx nx serve 07-ssr",
+    "chapter-10:html-to-qwik-part-ii": "npx nx serve 10-conversion-html-qwik-ii",
     "chapter-20": "npx nx serve 20-react-integration",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
     "extra:rock.scissors.paper": "npx nx serve extra-02-rock-scissors-paper-game",
