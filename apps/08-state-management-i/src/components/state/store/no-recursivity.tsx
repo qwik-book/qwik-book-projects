@@ -4,8 +4,8 @@ export const StoreNORecursivity = component$(() => {
   const store = useStore({
     name: 'Anartz', // (1) - Top Level
     lastName: 'Mugika Ledo', // (2) - Top Level
-    otherData: { hobbies: 'not tracked' }, // (3) - Nested Level (No top) - No detecta cambios
-  }, {deep: true});
+    otherData: { hobbies: 'wait...' }, // (3) - Nested Level (No top) - No detecta cambios
+  }, {deep: false});
 
   return (
     <>
@@ -15,7 +15,7 @@ export const StoreNORecursivity = component$(() => {
         </li>
         <li>Hobbies: {store.otherData.hobbies} (NO cambia)</li>
       </ul>
-      <button onClick$={() => (store.otherData.hobbies = 'tracked')}>
+      <button onClick$={() => (store.otherData.hobbies = 'value changes!')}>
         Click me to change hobbies
       </button>
       &nbsp;

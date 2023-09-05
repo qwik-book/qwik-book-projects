@@ -1,8 +1,17 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
-import { BasicSignal } from './../components/state/signal';
-import { BasicStore, StoreRecursivity } from './../components/state/store';
+import { BasicSignal, First, Parent } from './../components/state/signal';
+import {
+  BasicStore,
+  Parent as ParentStore,
+  First as FirstStore,
+  StoreNORecursivity,
+  StoreRecursivity,
+  StoreRecursivityArray,
+  StoreRecursivityArrayThree,
+  StoreRecursivityArrayTwo,
+} from './../components/state/store';
 
 export default component$(() => {
   return (
@@ -15,6 +24,30 @@ export default component$(() => {
       <hr />
       <h2>3.- useStore - CON Recursividad</h2>
       <StoreRecursivity />
+      <hr />
+      <h2>4.- useStore - CON Recursividad en Arrays</h2>
+      <StoreRecursivityArray />
+      <hr />
+      <h2>5.- useStore - CON Recursividad en Arrays II</h2>
+      <StoreRecursivityArrayTwo />
+      <hr />
+      <h2>6.- useStore - CON Recursividad en Arrays III</h2>
+      <StoreRecursivityArrayThree />
+      <hr />
+      <h2>7.- useStore - SIN Recursividad</h2>
+      <StoreNORecursivity />
+      <hr />
+      <h2>8.- useSignal - props - Pasar información entre componentes</h2>
+      <Parent />
+      <hr />
+      <h2>9.- useStore - props - Pasar información entre componentes</h2>
+      <ParentStore />
+      <hr />
+      <h2>10.- useSignal - props - Pasar información estado con Context API</h2>
+      <First />
+      <hr />
+      <h2>11.- useStore - props - Pasar información estado con Context API</h2>
+      <FirstStore />
       <hr />
     </div>
   );
