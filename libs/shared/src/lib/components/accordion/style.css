@@ -1,0 +1,68 @@
+.accordion-heading {
+    border-bottom: #777;
+    padding: 20px 60px;
+}
+
+.accordion-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line {
+    width: 100%;
+    margin: auto;
+}
+
+/* Style the buttons that are used to open and close the accordion-page body */
+.accordion-page {
+    /* background-color: #eee; */
+    color: #444;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 100%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    font-size: 1rem;
+}
+
+.accordion-body {
+    margin: auto;
+    /* text-align: center; */
+    width: 100%;
+    padding: auto;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.item-active,
+.accordion-page:hover {
+    background-color: #F9F9F9;
+}
+
+/* Style the accordion-page panel. Note: hidden by default */
+.accordion-body {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.accordion-page:after {
+    content: '\02795';
+    /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.item-active:after {
+    content: "\2796";
+    /* Unicode character for "minus" sign (-) */
+}
+
+.open {
+    display: block;
+}
