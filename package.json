@@ -27,13 +27,15 @@
   },
   "private": true,
   "dependencies": {
-    "qwik-nx": "1.0.8",
-    "react-day-picker": "8.8.1",
     "@builder.io/qwik-react": "0.5.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
+    "@vanilla-extract/css": "^1.12.0",
+    "qwik-nx": "1.0.8",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-day-picker": "8.8.1",
+    "react-dom": "18.2.0",
+    "styled-vanilla-extract": "^0.5.4"
   },
   "engines": {
     "node": ">=15.0.0"

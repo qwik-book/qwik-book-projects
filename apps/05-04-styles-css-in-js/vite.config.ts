@@ -3,6 +3,8 @@ import { qwikCity } from '@builder.io/qwik-city/vite';
 import { defineConfig } from 'vite';
 import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
+import { vanillaExtractPlugin } from "styled-vanilla-extract/vite";
+
 
 export default defineConfig({
   cacheDir: '../../node_modules/.vite/apps/05-04-styles-css-in-js',
@@ -18,6 +20,7 @@ export default defineConfig({
       },
     }),
     tsconfigPaths({ root: '../../' }),
+    vanillaExtractPlugin()
   ],
   server: {
     fs: {
