@@ -15,6 +15,7 @@
     "chapter-05:usestylesscoped": "npx nx serve 05-03-styles-usestylesscoped",
     "chapter-05:css-in-js": "npx nx serve 05-04-styles-css-in-js",
     "chapter-05:styled-components": "npx nx serve 05-05-styles-styled-components",
+    "chapter-05:practice": "npx nx serve 05-06-styles-finish-practice",
     "chapter-06:html-to-qwik-part-i": "npx nx serve 06-conversion-html-qwik-i",
     "chapter-07": "npx nx serve 07-ssr",
     "chapter-08": "npx nx serve 08-state-management-i",
