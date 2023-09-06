@@ -1,13 +1,30 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { UseComputedBasic } from '../components/use-computed-basic';
+import { UseComputedToUpperCase } from '../components/use-computed-to-uppercase';
+import { UseComputedNewText } from '../components/use-computed-new-text';
+import { UseComputedNewTextUseStore } from '../components/use-computed-new-text-use-store';
+import { UseComputedNewTextUseStoreProps } from '../components/use-computed-new-text-use-store-props';
+import { UseComputedNewTextUseStoreContext } from '../components/use-computed-new-text-use-store-context';
+import { UseComputedPractice } from '../components/use-computed-practice';
 
 export default component$(() => {
   return (
-    <div>
-      <h1>
-        Bienvenido a un nuevo proyecto de Qwik <span class="lightning">⚡️</span>
-      </h1>
-    </div>
+    <>
+      <UseComputedBasic />
+      <hr/>
+      <UseComputedToUpperCase />
+      <hr/>
+      <UseComputedNewText />
+      <hr/>
+      <UseComputedNewTextUseStore />
+      <hr/>
+      <UseComputedNewTextUseStoreProps />
+      <hr/>
+      <UseComputedNewTextUseStoreContext />
+      <hr/>
+      <UseComputedPractice />
+    </>
   );
 });
 

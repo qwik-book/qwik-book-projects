@@ -19,6 +19,7 @@
     "chapter-06:html-to-qwik-part-i": "npx nx serve 06-conversion-html-qwik-i",
     "chapter-07": "npx nx serve 07-ssr",
     "chapter-08": "npx nx serve 08-state-management-i",
+    "chapter-09": "npx nx serve 09-state-management-ii",
     "chapter-10:html-to-qwik-part-ii": "npx nx serve 10-conversion-html-qwik-ii",
     "chapter-16": "npx nx serve 16-custom-hooks",
     "chapter-20": "npx nx serve 20-react-integration",
