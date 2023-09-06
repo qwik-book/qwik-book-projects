@@ -1,13 +1,21 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
+import { Link } from "@builder.io/qwik-city";
+import { RedBox, GreenBox, OrangeBox } from "./../../styles/colors.css";
+
+
 export default component$(() => {
   return (
-    <div>
-      <h1>
-        Bienvenido a un nuevo proyecto de Qwik <span class="lightning">⚡️</span>
-      </h1>
-    </div>
+    <>
+      <h1>Home 👋</h1>
+      <p>Home Page</p>
+      <RedBox>¡¡Aquí el contenido con el fondo rojo!!</RedBox>
+      <OrangeBox>¡¡Aquí el contenido con el fondo naranja!!</OrangeBox>
+      <GreenBox>¡¡Aquí el contenido con el fondo verde!!</GreenBox>
+      <Link href="/second">Second Page (SPA)</Link>&nbsp;/&nbsp;
+      <a href="/second">Second Page (MPA) - Recarga de nuevo todo</a>
+    </>
   );
 });
 
