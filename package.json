@@ -22,6 +22,7 @@
     "chapter-09": "npx nx serve 09-state-management-ii",
     "chapter-10:html-to-qwik-part-ii": "npx nx serve 10-conversion-html-qwik-ii",
     "chapter-12": "npx nx serve 12-lifecycles",
+    "chapter-15": "npx nx serve 15-content-projection",
     "chapter-16": "npx nx serve 16-custom-hooks",
     "chapter-20": "npx nx serve 20-react-integration",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
