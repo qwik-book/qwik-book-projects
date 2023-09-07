@@ -4,6 +4,8 @@ import { UseTaskOnMount } from '../components/use-task-on-mount';
 import { UseTaskWithTrack } from '../components/use-task-with-track';
 import { UseTaskWithTrackFunction } from '../components/use-task-with-track-function';
 import { UseTaskCleanUp } from '../components/use-task-cleanup';
+import { UseVisibleTask } from '../components/use-visible-task';
+import { UseTaskDomElementsWithIsServer } from '../components/use-task-dom-elements';
 
 export default component$(() => {
   return (
@@ -23,6 +25,11 @@ export default component$(() => {
       <h2>4.- <strong>useTask$</strong> - cleanup()</h2>
       <UseTaskCleanUp />
       <hr />
+      <h2>5.- <strong>useVisibleTask$</strong> - Ejemplo completo</h2>
+      <UseVisibleTask />
+      <hr/>
+      <h2>6.- <strong>useTask$</strong> - Elemento DOM con useTask$ y isServer</h2>
+      <UseTaskDomElementsWithIsServer />
     </div>
   );
 });
