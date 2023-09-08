@@ -24,6 +24,7 @@
     "chapter-12": "npx nx serve 12-lifecycles",
     "chapter-15": "npx nx serve 15-content-projection",
     "chapter-16": "npx nx serve 16-custom-hooks",
+    "chapter-19": "npx nx serve 19-library-mode",
     "chapter-20": "npx nx serve 20-react-integration",
     "extra:quizapp": "npx nx serve extra-01-quizapp",
     "extra:rock.scissors.paper": "npx nx serve extra-02-rock-scissors-paper-game",

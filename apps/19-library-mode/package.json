@@ -1,0 +1,37 @@
+{
+  "name": "19-library-mode",
+  "files": [
+    "dist",  
+    "!dist/types/root.d.ts", 
+    "!dist/types/entry.dev.d.ts", 
+    "!dist/types/entry.ssr.d.ts" 
+  ],
+  "main": "./dist/index.qwik.cjs",
+  "qwik": "./dist/index.qwik.mjs",
+  "module": "./dist/index.qwik.mjs",
+  "types": "./dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.qwik.mjs",
+      "require": "./dist/index.qwik.cjs",
+      "types": "./dist/types/index.d.ts"
+    }
+  },
+  "directories": {
+    "lib": "dist"
+  },
+  "scripts": {
+    "build": "qwik build && rm -rf ./types",
+    "build.lib": "vite build --mode lib",
+    "build.types": "tsc --emitDeclarationOnly",
+    "dev": "vite --mode ssr",
+    "dev.debug": "node --inspect-brk ./node_modules/vite/bin/vite.js --mode ssr --force",
+    "fmt": "prettier --write .",
+    "fmt.check": "prettier --check .",
+    "lint": "eslint \"src/**/*.ts*\"",
+    "release": "np",
+    "start": "vite --open --mode ssr",
+    "qwik": "qwik",
+    "pack": "rm -rf dist && npm cache clean --force && npm run build && npm pack"
+  }
+}
