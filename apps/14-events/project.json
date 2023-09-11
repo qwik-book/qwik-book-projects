@@ -1,14 +1,14 @@
 {
-  "name": "19-library-mode",
+  "name": "14-events",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/19-library-mode/src",
+  "sourceRoot": "apps/14-events/src",
   "targets": {
     "build": {
       "executor": "qwik-nx:build",
       "options": {
-        "runSequence": ["19-library-mode:build.client", "19-library-mode:build.ssr"],
-        "outputPath": "dist/apps/19-library-mode"
+        "runSequence": ["14-events:build.client", "14-events:build.ssr"],
+        "outputPath": "dist/apps/14-events"
       },
       "configurations": {
         "preview": {}
@@ -17,15 +17,15 @@
     "build.client": {
       "executor": "@nx/vite:build",
       "options": {
-        "outputPath": "dist/apps/19-library-mode",
-        "configFile": "apps/19-library-mode/vite.config.ts"
+        "outputPath": "dist/apps/14-events",
+        "configFile": "apps/14-events/vite.config.ts"
       }
     },
     "build.ssr": {
       "executor": "@nx/vite:build",
       "defaultConfiguration": "preview",
       "options": {
-        "outputPath": "dist/apps/19-library-mode"
+        "outputPath": "dist/apps/14-events"
       },
       "configurations": {
         "preview": {
@@ -37,22 +37,22 @@
     "preview": {
       "executor": "@nx/vite:preview-server",
       "options": {
-        "buildTarget": "19-library-mode:build",
+        "buildTarget": "14-events:build",
         "port": 4300
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["../../coverage/apps/19-library-mode"],
+      "outputs": ["../../coverage/apps/14-events"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/19-library-mode"
+        "reportsDirectory": "../../coverage/apps/14-events"
       }
     },
     "serve": {
       "executor": "@nx/vite:dev-server",
       "options": {
-        "buildTarget": "19-library-mode:build.client",
+        "buildTarget": "14-events:build.client",
         "mode": "ssr",
         "port": 5173
       }
@@ -61,14 +61,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
-        "cwd": "apps/19-library-mode"
+        "cwd": "apps/14-events"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/19-library-mode/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/14-events/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },

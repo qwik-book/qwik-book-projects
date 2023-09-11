@@ -1,5 +1,5 @@
 {
-  "name": "19-library-mode",
+  "name": "18-library-mode",
   "files": [
     "dist",  
     "!dist/types/root.d.ts", 

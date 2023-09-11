@@ -16,16 +16,16 @@ export default defineConfig({
     },
     outDir: './dist'
   },
-  cacheDir: '../../node_modules/.vite/apps/19-library-mode',
+  cacheDir: '../../node_modules/.vite/apps/18-library-mode',
   plugins: [
     qwikNxVite(),
     qwikCity(),
     qwikVite({
       client: {
-        outDir: '../../dist/apps/19-library-mode/client',
+        outDir: '../../dist/apps/18-library-mode/client',
       },
       ssr: {
-        outDir: '../../dist/apps/19-library-mode/server',
+        outDir: '../../dist/apps/18-library-mode/server',
       },
     }),
     tsconfigPaths({ root: '../../' }),
