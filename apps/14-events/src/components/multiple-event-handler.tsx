@@ -2,22 +2,30 @@ import { component$, useSignal, $ } from '@builder.io/qwik';
 
 export const MultipleEventHandler = component$(() => {
   const count = useSignal(0);
-  const lastUpdate = useSignal(new Date().toISOString())
+  // 1.- Añadimos el valor de última actualziación
+  const lastUpdate = useSignal(new Date().toISOString());
   const eventTwo = $(() => console.log('Event Two with action'));
   return (
     <>
       <button
         onClick$={[
-          $(() => count.value++), // 1
-          eventTwo /*2*/,
-          $(() => { // 3
-              lastUpdate.value = new Date().toISOString();
-              console.log(lastUpdate.value, 'Working with events - Multiple Handlers');
+          $(() => count.value++), // 2
+          eventTwo /* 3 - Usando la función desacoplada */,
+          $(() => {
+            // 4
+            // Actualizamos la fecha y hora actual
+            lastUpdate.value = new Date().toISOString();
+            // Registramos mensaje en la consola
+            console.log(
+              lastUpdate.value,
+              'Working with events - Multiple Handlers'
+            );
           }),
         ]}
       >
         Increment {count.value}
-      </button> <span>Last update: {lastUpdate.value}</span>
+      </button>{' '}
+      <span>Last update: {lastUpdate.value}</span>
     </>
   );
 });

@@ -1,9 +1,13 @@
 import { component$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
-import {InlineHandler} from './../components/inline';
+import { InlineHandler } from './../components/inline';
 import { ReuseEventHandler } from './../components/reuse-event-handler';
-import { MultipleEventHandler } from './../components/multiple-event-handler'
-
+import { MultipleEventHandler } from './../components/multiple-event-handler';
+import { EventObject } from './../components/event-object';
+import { PreventDefault } from './../components/prevent-default';
+import { CurrentTarget } from './../components/current-target';
+import { SynchronousEventHandling } from './../components/synchronus-event-handling';
+import { PropFunctionExample } from './../components/prop-function';
 export default component$(() => {
   return (
     <div>
@@ -14,8 +18,18 @@ export default component$(() => {
       <InlineHandler />
       <h2>2.- Reuse Event Handler</h2>
       <ReuseEventHandler />
-      <h2>Multiple Event Handler</h2>
+      <h2>3.- Multiple Event Handler</h2>
       <MultipleEventHandler />
+      <h2>4.- Event Objects</h2>
+      <EventObject />
+      <h2>5.- Prevent Default - click</h2>
+      <PreventDefault />
+      <h2>6.- Current target</h2>
+      <CurrentTarget />
+      <h2>7.- Synchrons Event Handling</h2>
+      <SynchronousEventHandling />
+      <h2>8.- PropFunction</h2>
+      <PropFunctionExample />
     </div>
   );
 });
