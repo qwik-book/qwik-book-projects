@@ -1,5 +1,5 @@
 import { component$ } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
+import { Link, type DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
@@ -7,6 +7,7 @@ export default component$(() => {
       <h1>
         Bienvenido a un nuevo proyecto de Qwik <span class="lightning">⚡️</span>
       </h1>
+      <p>A continuación podemos visualizar el contenido del elemento de mapa que será la integración que se ha realizado en este capítulo: <Link href='/basic-map'>Ejemplo</Link></p>
     </div>
   );
 });
