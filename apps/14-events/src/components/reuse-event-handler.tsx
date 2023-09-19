@@ -5,15 +5,15 @@ export const ReuseEventHandler = component$(() => {
   const increment = $(() => count.value++);
   return (
     <>
-      <button onClick$={increment}>Increment</button>
-      <button onClick$={increment}>Increment (Button 2)</button>
+      <button onClick$={increment}>+1</button>
+      <button onClick$={increment}>+1 (Botón 2)</button>
       <div
         onMouseEnter$={increment}
         style='height: 100px; width: 400px; background-color: blue'
       >
-        Put cursor hover me to increment counter
+        Poner el cursor del ratón sobre el cuadro azul para hacer + 1
       </div>
-      <p>Count: {count.value}</p>
+      <p>Valor actual: {count.value}</p>
     </>
   );
 });

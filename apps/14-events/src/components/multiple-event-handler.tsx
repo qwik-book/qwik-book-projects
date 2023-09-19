@@ -18,14 +18,14 @@ export const MultipleEventHandler = component$(() => {
             // Registramos mensaje en la consola
             console.log(
               lastUpdate.value,
-              'Working with events - Multiple Handlers'
+              'Trabajando con eventos - Multiple Handlers / Manejador de eventos múltiple'
             );
           }),
         ]}
       >
-        Increment {count.value}
+        Incrementar: {count.value}
       </button>{' '}
-      <span>Last update: {lastUpdate.value}</span>
+      <span>Última actualización: {lastUpdate.value}</span>
     </>
   );
 });

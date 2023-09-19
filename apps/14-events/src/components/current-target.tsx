@@ -10,16 +10,20 @@ export const CurrentTarget = component$(() => {
         targetElement.value = event.target as HTMLElement;
       }}
     >
-      Click on any text <code>target</code> and <code>currentElm</code> of the
-      event.
+      Haga clic en cualquier texto <code>target</code> y{' '}
+      <code>currentElement</code> (SIEMPRE será SECTION) del evento por ser donde se realiza el click siempre.
       <hr />
       <p>
-        Hello <b>World</b>!
+        ¡Hola <b>Mundo</b>!
       </p>
       <hr />
       <ul>
-        <li>Current Element: {currentElement.value?.tagName}</li>
-        <li>Target Element: {targetElement.value?.tagName}</li>
+        <li>
+          Elemento actual (Current Element): {currentElement.value?.tagName}
+        </li>
+        <li>
+          Elemento objetivo (Target Element): {targetElement.value?.tagName}
+        </li>
       </ul>
     </section>
   );

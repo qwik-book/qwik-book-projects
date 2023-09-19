@@ -1,7 +1,7 @@
 import { type PropFunction, component$ } from '@builder.io/qwik';
  
 export const PropFunctionExample = component$(() => {
-  return <Button onClick$={() => alert('CLICKED!')} label="Púlsame para ver lo que ocurre :)" />;
+  return <Button onClick$={() => alert('¡PULSADO!')} label="Púlsame para ver lo que ocurre :)" />;
 });
  
 export const Button = component$<{
