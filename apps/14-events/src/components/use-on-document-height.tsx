@@ -13,7 +13,7 @@ export const UseOnDocument = component$(() => {
     'mousemove',
     $((event) => {
         // Podemos acceder a la altura del "document", la parte visible
-      console.log('Height: ' + document.body.clientHeight)
+      console.log('Width: ' + document.body.clientWidth)
       store.position.x = (event as MouseEvent).x;
       store.position.y = (event as MouseEvent).y;
     })
