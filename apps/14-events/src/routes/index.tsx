@@ -10,6 +10,7 @@ import { SynchronousEventHandling } from './../components/synchronus-event-handl
 import { PropFunctionExample } from './../components/prop-function';
 import { UseOnExample } from './../components/useon';
 import { UseOnDocument } from './../components/use-on-document';
+import { UseOnDocumentMiddlePaint } from './../components/use-on-document-middle-paint';
 import { UseOnWindow } from './../components/use-on-window';
 import { UseOnWindowScreens } from './../components/use-on-window-screens';
 import { UseOnWindowScreensCountRefreshs } from './../components/use-on-window-screens-count-refreshs';
@@ -50,6 +51,8 @@ export default component$(() => {
       <h2>10.- Hooks - useOnDocument</h2>
       <UseOnDocument />
       <hr />
+      <h2>10B.- Hooks - useOnDocument - Ejercicio 1</h2>
+      <UseOnDocumentMiddlePaint />
       <h2>11.- Hooks - useOnWindow</h2>
       <UseOnWindow />
       <hr />
