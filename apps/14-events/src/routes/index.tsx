@@ -8,6 +8,7 @@ import { PreventDefault } from './../components/prevent-default';
 import { CurrentTarget } from './../components/current-target';
 import { SynchronousEventHandling } from './../components/synchronus-event-handling';
 import { PropFunctionExample } from './../components/prop-function';
+import { PropFunctionPractice } from './../components/prop-function-practice';
 import { UseOnExample } from './../components/useon';
 import { UseOnDocument } from './../components/use-on-document';
 import { UseOnDocumentMiddlePaint } from './../components/use-on-document-middle-paint';
@@ -44,6 +45,9 @@ export default component$(() => {
       <hr />
       <h2>8.- PropFunction</h2>
       <PropFunctionExample />
+      <hr />
+      <h2>8B.- PropFunction - Practice</h2>
+      <PropFunctionPractice />
       <hr />
       <h2>9.- Hooks - useOn</h2>
       <UseOnExample />

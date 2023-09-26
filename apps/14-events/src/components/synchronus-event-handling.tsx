@@ -5,7 +5,7 @@ export const SynchronousEventHandling = component$(() => {
   const draggableRef = useSignal<HTMLElement>();
   // 2.- Almacaremos el valor del estado del arrastre (dragstart / dragend)
   const dragStatus = useSignal(
-    'A la espera de arrastrar para cambair de estado'
+    'A la espera de arrastrar para cambiar de estado'
   );
 
   useVisibleTask$(({ cleanup }) => {
@@ -30,7 +30,7 @@ export const SynchronousEventHandling = component$(() => {
   return (
     <div>
       <button draggable ref={draggableRef}>
-        {dragStatus.value === 'dragstart' ? 'Arrastrando :)' : '¡¡Arrastrame!!'}
+        {dragStatus.value === 'dragstart (Arrastrando)' ? 'Arrastrando :)' : '¡¡Arrastrame!!'}
       </button>
       <p>{dragStatus.value}</p>
     </div>
