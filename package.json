@@ -2,6 +2,10 @@
   "name": "@qwik-books-projects/source",
   "version": "0.0.0",
   "license": "MIT",
+  "author": {
+    "name": "Anartz Mugika Ledo",
+    "email": "mugan86@gmail.com"
+  },
   "scripts": {
     "base": "npx nx serve 00-base",
     "chapter-01": "npx nx serve 01-first-steps",
