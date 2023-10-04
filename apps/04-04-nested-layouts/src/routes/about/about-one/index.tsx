@@ -3,10 +3,12 @@ import type { DocumentHead } from '@builder.io/qwik-city';
 
 export default component$(() => {
   return (
-    <div>
-      <h1>
-        Bienvenido a un nuevo proyecto de Qwik <span class="lightning">⚡️</span>
-      </h1>
+    <div style='border: 4px dotted blue; padding: 25px'>
+      <p>
+        <code>src/routes/about/index.tsx</code>
+      </p>
+      <h1>Ruta "/about/about-one"</h1>
+      Esta es la página 'about/about-one'
     </div>
   );
 });

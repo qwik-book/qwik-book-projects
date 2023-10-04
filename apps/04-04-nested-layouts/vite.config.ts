@@ -5,16 +5,16 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 import { qwikNxVite } from 'qwik-nx/plugins';
 
 export default defineConfig({
-  cacheDir: '../../node_modules/.vite/apps/04-nested-layouts',
+  cacheDir: '../../node_modules/.vite/apps/04-04-nested-layouts',
   plugins: [
     qwikNxVite(),
     qwikCity(),
     qwikVite({
       client: {
-        outDir: '../../dist/apps/04-nested-layouts/client',
+        outDir: '../../dist/apps/04-04-nested-layouts/client',
       },
       ssr: {
-        outDir: '../../dist/apps/04-nested-layouts/server',
+        outDir: '../../dist/apps/04-04-nested-layouts/server',
       },
     }),
     tsconfigPaths({ root: '../../' }),

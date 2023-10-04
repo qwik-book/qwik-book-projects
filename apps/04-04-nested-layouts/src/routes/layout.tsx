@@ -7,9 +7,12 @@ export default component$(() => {
     <>
       <main>
         <Header />
-        <section>
+        <div style='border: 4px dotted red; padding: 25px; margin-top: 1rem'>
+          <p>
+            <code>src/routes/layout.tsx</code>
+          </p>
           <Slot />
-        </section>
+        </div>
       </main>
       <Footer />
     </>
