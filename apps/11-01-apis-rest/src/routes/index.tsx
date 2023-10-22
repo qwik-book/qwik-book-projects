@@ -47,7 +47,7 @@ export default component$(() => {
           return result.length ? (
             <ul class="list">
               {result.map((race: any) => (
-                <li>
+                <li key={race.raceName.toLowerCase()}>
                   <a href={race.url} target="_blank">
                     {race.raceName}
                   </a>{' '}
