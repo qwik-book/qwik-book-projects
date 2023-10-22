@@ -1,0 +1,76 @@
+{
+  "name": "17-testing",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/17-testing/src",
+  "targets": {
+    "build": {
+      "executor": "qwik-nx:build",
+      "options": {
+        "runSequence": ["17-testing:build.client", "17-testing:build.ssr"],
+        "outputPath": "dist/apps/17-testing"
+      },
+      "configurations": {
+        "preview": {}
+      }
+    },
+    "build.client": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "outputPath": "dist/apps/17-testing",
+        "configFile": "apps/17-testing/vite.config.ts"
+      }
+    },
+    "build.ssr": {
+      "executor": "@nx/vite:build",
+      "defaultConfiguration": "preview",
+      "options": {
+        "outputPath": "dist/apps/17-testing"
+      },
+      "configurations": {
+        "preview": {
+          "ssr": "src/entry.preview.tsx",
+          "mode": "production"
+        }
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview-server",
+      "options": {
+        "buildTarget": "17-testing:build",
+        "port": 4300
+      }
+    },
+    "test": {
+      "executor": "@nx/vite:test",
+      "outputs": ["../../coverage/apps/17-testing"],
+      "options": {
+        "passWithNoTests": true,
+        "reportsDirectory": "../../coverage/apps/17-testing"
+      }
+    },
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "buildTarget": "17-testing:build.client",
+        "mode": "ssr",
+        "port": 5173
+      }
+    },
+    "serve.debug": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
+        "cwd": "apps/17-testing"
+      }
+    },
+    "lint": {
+      "executor": "@nx/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/17-testing/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  },
+  "tags": []
+}
