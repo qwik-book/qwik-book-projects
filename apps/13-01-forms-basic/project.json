@@ -1,14 +1,14 @@
 {
-  "name": "13-forms-basic",
+  "name": "13-01-forms-basic",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "application",
-  "sourceRoot": "apps/13-forms-basic/src",
+  "sourceRoot": "apps/13-01-forms-basic/src",
   "targets": {
     "build": {
       "executor": "qwik-nx:build",
       "options": {
-        "runSequence": ["13-forms-basic:build.client", "13-forms-basic:build.ssr"],
-        "outputPath": "dist/apps/13-forms-basic"
+        "runSequence": ["13-01-forms-basic:build.client", "13-01-forms-basic:build.ssr"],
+        "outputPath": "dist/apps/13-01-forms-basic"
       },
       "configurations": {
         "preview": {}
@@ -17,15 +17,15 @@
     "build.client": {
       "executor": "@nx/vite:build",
       "options": {
-        "outputPath": "dist/apps/13-forms-basic",
-        "configFile": "apps/13-forms-basic/vite.config.ts"
+        "outputPath": "dist/apps/13-01-forms-basic",
+        "configFile": "apps/13-01-forms-basic/vite.config.ts"
       }
     },
     "build.ssr": {
       "executor": "@nx/vite:build",
       "defaultConfiguration": "preview",
       "options": {
-        "outputPath": "dist/apps/13-forms-basic"
+        "outputPath": "dist/apps/13-01-forms-basic"
       },
       "configurations": {
         "preview": {
@@ -37,22 +37,22 @@
     "preview": {
       "executor": "@nx/vite:preview-server",
       "options": {
-        "buildTarget": "13-forms-basic:build",
+        "buildTarget": "13-01-forms-basic:build",
         "port": 4300
       }
     },
     "test": {
       "executor": "@nx/vite:test",
-      "outputs": ["../../coverage/apps/13-forms-basic"],
+      "outputs": ["../../coverage/apps/13-01-forms-basic"],
       "options": {
         "passWithNoTests": true,
-        "reportsDirectory": "../../coverage/apps/13-forms-basic"
+        "reportsDirectory": "../../coverage/apps/13-01-forms-basic"
       }
     },
     "serve": {
       "executor": "@nx/vite:dev-server",
       "options": {
-        "buildTarget": "13-forms-basic:build.client",
+        "buildTarget": "13-01-forms-basic:build.client",
         "mode": "ssr",
         "port": 5173
       }
@@ -61,14 +61,14 @@
       "executor": "nx:run-commands",
       "options": {
         "command": "node --inspect-brk ../../node_modules/vite/bin/vite.js --mode ssr --force",
-        "cwd": "apps/13-forms-basic"
+        "cwd": "apps/13-01-forms-basic"
       }
     },
     "lint": {
       "executor": "@nx/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/13-forms-basic/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/13-01-forms-basic/**/*.{ts,tsx,js,jsx}"]
       }
     }
   },
