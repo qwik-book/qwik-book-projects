@@ -1,39 +1,46 @@
 import { $, component$, useComputed$, useStore, useStyles$ } from '@builder.io/qwik';
 
 import formStyles from './index.css?inline';
-import { DocumentHead } from '@builder.io/qwik-city';
+import { DocumentHead, Form, routeAction$ } from '@builder.io/qwik-city';
 const EMAIL_PATTERN = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+export const useNewsletterAddEmail = routeAction$(async (data, requestEvent) => {
+  // Esto solo se ejecutará en el servidor cuando el usuario envíe el formulario 
+  // (o cuando la acción se llame programáticamente).
+  console.log("Datos a enviar", data);
+  
+  // Información del evento de envio
+  console.log("Request headers:", requestEvent.request.headers);
+  console.log("Request cookies:", requestEvent.cookie);
+  console.log("Request url:", requestEvent.url);
+  console.log("Request params:", requestEvent.params);
+  
+  // Respuesta que se devuelve
+  return {
+    success: true,
+    data,
+  };
+});
 
 export default component$(() => {
   const formContainer = useStore({email: ''});
+  const action = useNewsletterAddEmail();
   useStyles$(formStyles);
-  const onSubmit = $(() => {
-    const { email } = formContainer;
-    console.log({ email });
-  });
-
-  const validateEmail = useComputed$(() => 
-    EMAIL_PATTERN.test(formContainer.email) ? "" : "invalid-field");
+  
   return (
     <div class="formbold-main-wrapper">
       <div class="formbold-form-wrapper">
-        <form onSubmit$={onSubmit} preventdefault:submit>
+        <Form action={action}>
           <div class="formbold-email-subscription-form">
             <input
               type="email"
               name="email"
-              id="email"
               placeholder="Introduzca su correo electrónico"
-              onInput$={(event) =>
-                (formContainer.email = (
-                  event.target as HTMLInputElement
-                ).value)
-              }
               class="formbold-form-input invalid-field"
               required
             />
 
-            <button class="formbold-btn" disabled={validateEmail.value === 'invalid-field'}>
+            <button class="formbold-btn">
               Suscribirme
               <svg
                 width="16"
@@ -56,13 +63,10 @@ export default component$(() => {
               </svg>
             </button>
           </div>
-          {
-            validateEmail.value === 'invalid-field' ? 
-            <div class="invalid-message">
+          <div class="invalid-message">
               El e-mail introducido no es correcto. Debe de seguir el siguiente formato: contacto@qwik-book.es
-            </div> : null
-          }
-        </form>
+            </div>
+        </Form>
         Email registrado: {formContainer.email}
       </div>
     </div>
