@@ -1,7 +1,5 @@
 import {
-  $,
   component$,
-  useComputed$,
   useStore,
   useStyles$,
 } from '@builder.io/qwik';
@@ -14,19 +12,26 @@ import {
   z,
   zod$,
 } from '@builder.io/qwik-city';
-const EMAIL_PATTERN = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-export const useNewsletterAddEmail = routeAction$(async (data) => {
-  // Esto solo se ejecutará en el servidor cuando el usuario envíe el formulario
-  // (o cuando la acción se llame programáticamente).
-  console.log('(FORMULARIO) Datos a enviar', data);
+export const useNewsletterAddEmail = routeAction$(
+  async (data) => {
+    // Esto solo se ejecutará en el servidor cuando el usuario envíe el formulario
+    // (o cuando la acción se llame programáticamente).
+    console.log('(FORMULARIO) Datos a enviar', data);
 
-  // SI ES VÁLIDO devuelve esto
-  return {
-    success: true,
-    data,
-  };
-});
+    // SI ES VÁLIDO devuelve esto
+    return {
+      success: true,
+      data,
+    };
+  },
+  // SI NO ES VÁLIDO
+  // Zod schema es usado para validar datos de un formulario
+  // En este caso vamos a validar que sea de tipo string, de tipo email
+  zod$({
+    email: z.string().email({message: 'El correo electrónico es incorrecto'}),
+  }),
+);
 
 export default component$(() => {
   const formContainer = useStore({ email: '' });
@@ -69,6 +74,14 @@ export default component$(() => {
               </svg>
             </button>
           </div>
+          {action.value?.failed && (
+            <div class="invalid-message">
+              El e-mail introducido no es correcto. Debe de seguir el siguiente
+              formato: contacto@qwik-book.es
+              {JSON.stringify(action.value)}
+            </div>
+          )}
+
           <p>¿Enviado? {action.value?.success ? 'OK' : 'Pendiente'}</p>
         </Form>
         <p>
