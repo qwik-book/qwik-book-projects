@@ -1,8 +1,4 @@
-import {
-  component$,
-  useStore,
-  useStyles$,
-} from '@builder.io/qwik';
+import { component$, useStore, useStyles$ } from '@builder.io/qwik';
 
 import formStyles from './index.css?inline';
 import {
@@ -29,7 +25,12 @@ export const useNewsletterAddEmail = routeAction$(
   // Zod schema es usado para validar datos de un formulario
   // En este caso vamos a validar que sea de tipo string, de tipo email
   zod$({
-    email: z.string().email({message: 'El correo electrónico es incorrecto'}),
+    email: z.string().email({
+      message: `
+        El e-mail introducido no es correcto. Debe de seguir el siguiente formato:
+        contacto@qwik-book.es
+      `
+    }),
   }),
 );
 
@@ -47,7 +48,9 @@ export default component$(() => {
               type="email"
               name="email"
               placeholder="Introduzca su correo electrónico"
-              class="formbold-form-input invalid-field"
+              class={`formbold-form-input ${
+                action.value?.fieldErrors?.email?.length ?  
+                "invalid-field" : ""}`}
               required
             />
 
@@ -74,11 +77,9 @@ export default component$(() => {
               </svg>
             </button>
           </div>
-          {action.value?.failed && (
+          {action.value?.failed && action.value.fieldErrors.email?.length && (
             <div class="invalid-message">
-              El e-mail introducido no es correcto. Debe de seguir el siguiente
-              formato: contacto@qwik-book.es
-              {JSON.stringify(action.value)}
+              {action.value.fieldErrors.email[0]}
             </div>
           )}
 
