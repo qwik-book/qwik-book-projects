@@ -37,6 +37,7 @@
     "chapter-13:basic": "npx nx serve 13-01-forms-basic",
     "chapter-13:basic-qwik": "npx nx serve 13-02-forms-basic-qwik",
     "chapter-13:basic-qwik-zod": "npx nx serve 13-03-forms-basic-qwik-zod",
+    "chapter-13:project": "npx nx serve 13-04-forms-project",
     "chapter-14": "npx nx serve 14-events",
     "chapter-15": "npx nx serve 15-content-projection",
     "chapter-16": "npx nx serve 16-custom-hooks",
