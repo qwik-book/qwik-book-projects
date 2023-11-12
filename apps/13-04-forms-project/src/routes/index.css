@@ -112,6 +112,10 @@ span.invalid-class {
     color: red !important;
 }
 
+input.invalid-class {
+    border: 1px solid red !important;
+}
+
 .invalid-message {
   background-color: rgb(244, 165, 165);
   margin-top: -0.3rem;
