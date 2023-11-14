@@ -1,4 +1,4 @@
-import { component$, useStyles$ } from '@builder.io/qwik';
+import { component$, useStyles$, useVisibleTask$ } from '@builder.io/qwik';
 import {
   Form,
   type DocumentHead,
@@ -7,6 +7,7 @@ import {
   z,
 } from '@builder.io/qwik-city';
 import styles from './index.css?inline';
+import { useLocalStorage } from '../hooks/useLocalStorage';
 
 export const useAddUrlToStoreInLocal = routeAction$(
   async (data) => {
@@ -17,6 +18,7 @@ export const useAddUrlToStoreInLocal = routeAction$(
 
     return {
       success: true,
+      readyToStorage: true,
       data,
     };
   },
@@ -36,6 +38,20 @@ export default component$(() => {
   const titleError = fieldErrors?.title;
   const descriptionError = fieldErrors?.description;
   const urlError = fieldErrors?.url;
+
+  const { set, clear, data, loading } = useLocalStorage(`my-bookmarks`);  
+          
+  useVisibleTask$(async ({ track }) => {
+    track(() => [action.value?.readyToStorage]);
+  
+    if (action.value?.readyToStorage) {
+      console.log("OK");
+      const saveData = [...data.value, action.value.data]
+      await set(saveData);
+      action.value.readyToStorage = false;
+    }
+  });
+    
   return (
     <div>
       <h1>
@@ -79,7 +95,7 @@ export default component$(() => {
           <button class="submit">Guardar</button>
         </Form>
         {action.status === 200 && action.value?.success && (
-          <>Preparado para guardar</>
+          <>Almacenado correctamente el elemento:  {action.value.data.title} ({action.value.data.url})</>
         )}
       </div>
     </div>
