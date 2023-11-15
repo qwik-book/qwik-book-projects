@@ -98,6 +98,29 @@ export default component$(() => {
           <>Almacenado correctamente el elemento:  {action.value.data.title} ({action.value.data.url})</>
         )}
       </div>
+      <hr />
+      <h2>Lista de enlaces favoritos</h2>
+      { loading.value && <h2>Cargando marcadores favoritos...</h2>}
+      {
+        !loading.value && !data.value.length && <h2>No hay marcadores almacenados. Empieza a añadirlos desde el formulario</h2>
+      }
+      {
+        !loading.value && data.value.length && <ul>
+        {data.value.map((urlItem) => {
+          const {title, url, description} = urlItem;
+          return (<li>
+            <span>{title}</span> - <span>{description}</span> /{' '}
+            <a class='btn-url' href={url} target='_blank'>
+                Ir a enlace
+            </a>
+        </li>)
+        })}
+      </ul>
+      }
+      <hr/>
+      <button class="delete-btn" onClick$={() => clear()}>Eliminar</button>
+      
+      
     </div>
   );
 });

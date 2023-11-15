@@ -1,119 +1,119 @@
 div {
-    background: white;
+  background: white;
 }
 .form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    max-width: 350px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 20px;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
 }
 
 .title {
-    font-size: 28px;
-    color: royalblue;
-    font-weight: 600;
-    letter-spacing: -1px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    padding-left: 30px;
+  font-size: 28px;
+  color: royalblue;
+  font-weight: 600;
+  letter-spacing: -1px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
 }
 
 .title::before,
 .title::after {
-    position: absolute;
-    content: "";
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    left: 0px;
-    background-color: royalblue;
+  position: absolute;
+  content: '';
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  left: 0px;
+  background-color: royalblue;
 }
 
 .title::before {
-    width: 18px;
-    height: 18px;
-    background-color: royalblue;
+  width: 18px;
+  height: 18px;
+  background-color: royalblue;
 }
 
 .title::after {
-    width: 18px;
-    height: 18px;
-    animation: pulse 1s linear infinite;
+  width: 18px;
+  height: 18px;
+  animation: pulse 1s linear infinite;
 }
 
 .message,
 .signin {
-    color: rgba(88, 87, 87, 0.822);
-    font-size: 14px;
+  color: rgba(88, 87, 87, 0.822);
+  font-size: 14px;
 }
 
 .signin {
-    text-align: center;
+  text-align: center;
 }
 
 .signin a {
-    color: royalblue;
+  color: royalblue;
 }
 
 .signin a:hover {
-    text-decoration: underline royalblue;
+  text-decoration: underline royalblue;
 }
 
 .flex {
-    display: flex;
-    width: 100%;
-    gap: 6px;
+  display: flex;
+  width: 100%;
+  gap: 6px;
 }
 
 .form label {
-    position: relative;
+  position: relative;
 }
 
 .form label .input {
-    width: 100%;
-    padding: 10px 10px 20px 10px;
-    outline: 0;
-    border: 1px solid rgba(105, 105, 105, 0.397);
-    border-radius: 10px;
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
 }
 
-.form label .input+span {
-    position: absolute;
-    left: 10px;
-    top: 28px;
-    color: grey;
-    font-size: 0.9em;
-    cursor: text;
-    transition: 0.3s ease;
+.form label .input + span {
+  position: absolute;
+  left: 10px;
+  top: 28px;
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
 }
 
-.form label .input:placeholder-shown+span {
-    top: 20px;
-    font-size: 0.9em;
+.form label .input:placeholder-shown + span {
+  top: 20px;
+  font-size: 0.9em;
 }
 
-.form label .input:focus+span,
-.form label .input:valid+span {
-    top: 0px;
-    font-size: 0.7em;
-    font-weight: 600;
+.form label .input:focus + span,
+.form label .input:valid + span {
+  top: 0px;
+  font-size: 0.7em;
+  font-weight: 600;
 }
 
-.form label .input:valid+span {
-    color: green;
+.form label .input:valid + span {
+  color: green;
 }
 
 span.invalid-class {
-    color: red !important;
+  color: red !important;
 }
 
 input.invalid-class {
-    border: 1px solid red !important;
+  border: 1px solid red !important;
 }
 
 .invalid-message {
@@ -124,74 +124,103 @@ input.invalid-class {
 }
 
 input.input {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 
 .submit {
-    border: none;
-    outline: none;
-    background-color: royalblue;
-    padding: 10px;
-    border-radius: 10px;
-    color: #fff;
-    font-size: 16px;
-    transform: .3s ease;
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: 0.3s ease;
 }
 
 .submit:hover {
-    background-color: rgb(56, 90, 194);
-    cursor: pointer;
+  background-color: rgb(56, 90, 194);
+  cursor: pointer;
 }
 
 @keyframes pulse {
-    from {
-        transform: scale(0.9);
-        opacity: 1;
-    }
+  from {
+    transform: scale(0.9);
+    opacity: 1;
+  }
 
-    to {
-        transform: scale(1.8);
-        opacity: 0;
-    }
+  to {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgb(56, 90, 194);
+  border-radius: 5px;
+  background-color: transparent;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.checkbox:before {
+  content: '';
+  background-color: rgb(56, 90, 194);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.checkbox:checked:before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.checkbox-label {
+  font-size: 18px;
+  cursor: pointer;
+  color: grey;
+  user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 20px;
 }
 
 
-.checkbox {
-    appearance: none;
-    width: 20px;
-    height: 20px;
-    border: 2px solid rgb(56, 90, 194);
-    border-radius: 5px;
-    background-color: transparent;
-    display: inline-block;
-    position: relative;
-    margin-right: 10px;
-    cursor: pointer;
+.delete-btn {
+    box-shadow:inset 0px 1px 0px 0px #cf866c;
+    background:linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color:#d0451b;
+    border-radius:3px;
+    border:1px solid #942911;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:13px;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #854629;
   }
-  
-  .checkbox:before {
-    content: "";
-    background-color: rgb(56, 90, 194);
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    width: 10px;
-    height: 10px;
-    border-radius: 3px;
-    transition: all 0.3s ease-in-out;
+  .delete-btn:hover {
+    background:linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    background-color:#bc3315;
   }
-  
-  .checkbox:checked:before {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .checkbox-label {
-    font-size: 18px;
-    cursor: pointer;
-    color: grey;
-    user-select: none;
-    display: flex;
-    align-items: center;
+  .delete-btn:active {
+    position:relative;
+    top:1px;
   }
