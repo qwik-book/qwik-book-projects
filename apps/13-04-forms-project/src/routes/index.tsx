@@ -1,4 +1,9 @@
-import { component$, useStyles$, useVisibleTask$ } from '@builder.io/qwik';
+import {
+  component$,
+  useStore,
+  useStyles$,
+  useVisibleTask$,
+} from '@builder.io/qwik';
 import {
   Form,
   type DocumentHead,
@@ -8,6 +13,7 @@ import {
 } from '@builder.io/qwik-city';
 import styles from './index.css?inline';
 import { useLocalStorage } from '../hooks/useLocalStorage';
+import { InputField } from '../components/form/input';
 
 export const useAddUrlToStoreInLocal = routeAction$(
   async (data) => {
@@ -32,6 +38,15 @@ export const useAddUrlToStoreInLocal = routeAction$(
 
 export default component$(() => {
   useStyles$(styles);
+
+  const bookMark = useStore({
+    form: {
+      url: '',
+      title: '',
+      description: '',
+    },
+  });
+
   const action = useAddUrlToStoreInLocal();
 
   const fieldErrors = action.value?.fieldErrors!;
@@ -39,19 +54,20 @@ export default component$(() => {
   const descriptionError = fieldErrors?.description;
   const urlError = fieldErrors?.url;
 
-  const { set, clear, data, loading } = useLocalStorage(`my-bookmarks`);  
-          
+  const { set, clear, data, loading } = useLocalStorage(`my-bookmarks`);
+
   useVisibleTask$(async ({ track }) => {
     track(() => [action.value?.readyToStorage]);
-  
+
     if (action.value?.readyToStorage) {
-      console.log("OK");
-      const saveData = [...data.value, action.value.data]
+      console.log('OK');
+      const saveData = [...data.value, action.value.data];
       await set(saveData);
       action.value.readyToStorage = false;
+      bookMark.form = { url: '', title: '', description: '' };
     }
   });
-    
+
   return (
     <div>
       <h1>
@@ -61,66 +77,73 @@ export default component$(() => {
         <Form class="form" action={action}>
           <p class="title">Añadir un nuevo enlace </p>
           <p class="message">Añadir enlace para almacenarlo como marcador</p>
-          <label>
-            <input
-              class={`input ${titleError ? 'invalid-class' : ''}`}
-              type="text"
-              name="title"
-            />
-            <span class={titleError ? 'invalid-class' : ''}>Título</span>
-          </label>
-          {titleError && <div class="invalid-message">{titleError[0]}</div>}
-          <label>
-            <input
-              class={`input ${descriptionError ? 'invalid-class' : ''}`}
-              type="text"
-              name="description"
-            />
-            <span class={descriptionError ? 'invalid-class' : ''}>
-              Descripción
-            </span>
-          </label>
-          {descriptionError && (
-            <div class="invalid-message">{descriptionError[0]}</div>
-          )}
-          <label>
-            <input
-              class={`input ${urlError ? 'invalid-class' : ''}`}
-              type="text"
-              name="url"
-            />
-            <span class={urlError ? 'invalid-class' : ''}>Enlace</span>
-          </label>
-          {urlError && <div class="invalid-message">{urlError[0]}</div>}
+          <InputField
+            name="title"
+            label="Título"
+            type="text"
+            value={bookMark.form.title}
+            errorMessage={
+              action.value?.failed && titleError?.length
+                ? titleError[0]
+                : undefined
+            }
+          />
+          <InputField
+            name="description"
+            label="Descripción"
+            type="text"
+            value={bookMark.form.description}
+            errorMessage={
+              action.value?.failed && descriptionError?.length
+                ? descriptionError[0]
+                : undefined
+            }
+          />
+          <InputField
+            name="url"
+            label="Url - Enlace"
+            type="url"
+            value={bookMark.form.url}
+            errorMessage={
+              action.value?.failed && urlError?.length ? urlError[0] : undefined
+            }
+          />
           <button class="submit">Guardar</button>
         </Form>
         {action.status === 200 && action.value?.success && (
-          <>Almacenado correctamente el elemento:  {action.value.data.title} ({action.value.data.url})</>
+          <>
+            Almacenado correctamente el elemento: {action.value.data.title} (
+            {action.value.data.url})
+          </>
         )}
       </div>
       <hr />
       <h2>Lista de enlaces favoritos</h2>
-      { loading.value && <h2>Cargando marcadores favoritos...</h2>}
-      {
-        !loading.value && !data.value.length && <h2>No hay marcadores almacenados. Empieza a añadirlos desde el formulario</h2>
-      }
-      {
-        !loading.value && data.value.length && <ul>
-        {data.value.map((urlItem) => {
-          const {title, url, description} = urlItem;
-          return (<li>
-            <span>{title}</span> - <span>{description}</span> /{' '}
-            <a class='btn-url' href={url} target='_blank'>
-                Ir a enlace
-            </a>
-        </li>)
-        })}
-      </ul>
-      }
-      <hr/>
-      <button class="delete-btn" onClick$={() => clear()}>Eliminar</button>
-      
-      
+      {loading.value && <h4>Cargando marcadores favoritos...</h4>}
+      {!loading.value && !data.value.length && (
+        <h4>
+          No hay marcadores almacenados. Empieza a añadirlos desde el formulario
+        </h4>
+      )}
+      {!loading.value && data.value.length && (
+        <ul>
+          {data.value.map((urlItem) => {
+            const { title, url, description } = urlItem;
+            return (
+              <li>
+                <span>{title}</span> - <span>{description}</span> /{' '}
+                <a class="btn-url" href={url} target="_blank">
+                  Ir a enlace
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      )}
+      <hr />
+      <button class="delete-btn" onClick$={() => clear()}>
+        Eliminar
+      </button>
     </div>
   );
 });
