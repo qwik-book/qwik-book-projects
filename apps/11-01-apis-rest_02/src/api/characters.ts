@@ -37,26 +37,26 @@ export const getCharacterAPI = async (
     controller?: AbortController
 ): Promise<object> => {
 
-    // 3.- CREAMOS la referencia del AÑO con el recurso JSON
+    // 2.- CREAMOS el endpoint en base al id seleccionado
     const endPoint = `/character/${id}`;
 
-    // 4.- Formamos la URL completa del recurso para la lista de carreras
+    // 3.- Formamos la URL completa del recurso para la lista de carreras
     const url = `${API_URL}${endPoint}`;
 
     console.log('Vamos a obtener datos desde =====>', url);
 
-    // 5.- Pedimos los datos del año seleccionado
+    // 4.- Pedimos los datos del año seleccionado
     const data = await fetch(url, {
     method: 'GET',
     signal: controller?.signal, 
-    // 8.- Uso de Abort Controller (controller.signal). 
+    // 7.- Uso de Abort Controller (controller.signal). 
     // Gestionamos las posibles cancelaciones en ejecución
     });
     console.log('FETCH resolved');
 
-    // 6.- Lista de carreras
+    // 5.- Información del personaje seleccionado
     const json: object = (await data.json());
 
-    // 7.- Devolvemos resultado
+    // 6.- Devolvemos resultado
     return ('id' in json) ? json : Promise.reject(json);
 };

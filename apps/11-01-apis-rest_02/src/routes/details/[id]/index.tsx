@@ -21,7 +21,7 @@ export default component$(() => {
         value={getCharacterResponse}
         onPending={() => <div>Cargando...</div>} // Mientras está ejecutando la carga
         onRejected={() => (
-          <div>Fallo a la hora de cargar la lista de carreras</div>
+          <div>Personaje no encontrado</div>
         )} // Rechazado
         onResolved={(result) => {
           return <div>

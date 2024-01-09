@@ -3,7 +3,6 @@ import { type DocumentHead, Link } from '@builder.io/qwik-city';
 import { charactersAPI } from '../api/characters';
 
 export default component$(() => {
-  // Año seleccionado
  
   // 2 Para cargar el contenido de la función que nos trae la información de la API
   const charactersListResponse = useResource$<any>(({ cleanup }) => {
@@ -17,13 +16,12 @@ export default component$(() => {
   });
   return (
     <>
-      <h1>Personajes de Breaking Bad</h1>
-      
+      <h1>Lista de Personajes principales de Breaking Bad</h1>
       <Resource
         value={charactersListResponse}
         onPending={() => <div>Cargando...</div>} // Mientras está ejecutando la carga
         onRejected={() => (
-          <div>Fallo a la hora de cargar la lista de carreras</div>
+          <div>Fallo a la hora de cargar la lista de personajes</div>
         )} // Rechazado
         onResolved={(result) => {
           return result.length ? (
@@ -44,6 +42,7 @@ export default component$(() => {
           );
         }}
       />
+      
     </>
   );
 });
