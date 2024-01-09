@@ -34,6 +34,7 @@
     "chapter-11:rest": "npx nx serve 11-01-apis-rest",
     "chapter-11:rest:02": "npx nx serve 11-01-apis-rest_02",
     "chapter-11:graphql": "npx nx serve 11-02-apis-graphql",
+    "chapter-11:graphql:02": "npx nx serve 11-02-apis-graphql_02",
     "chapter-12": "npx nx serve 12-lifecycles",
     "chapter-13:basic": "npx nx serve 13-01-forms-basic",
     "chapter-13:basic-qwik": "npx nx serve 13-02-forms-basic-qwik",
