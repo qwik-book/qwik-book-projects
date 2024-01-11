@@ -1,68 +1,48 @@
 import { Resource, component$, useResource$, useStore } from '@builder.io/qwik';
-import type { DocumentHead } from '@builder.io/qwik-city';
-import { ergastF1ChampionshipRaceListAPI } from '../api/f1';
+import { type DocumentHead, Link } from '@builder.io/qwik-city';
+import { charactersAPI } from '../api/characters';
 
 export default component$(() => {
-  // Año seleccionado
-  const races = useStore({
-    year: '2023',
-  });
+ 
   // 2 Para cargar el contenido de la función que nos trae la información de la API
-  const selectYearRacesResource = useResource$<any>(({ track, cleanup }) => {
-    // Observar cambios en el año con track para ejecutar la búsqueda con el nuevo valor
-    track(() => races.year); // <=======================
+  const charactersListResponse = useResource$<any>(({ cleanup }) => {
     // 3.- Es buena práctica usar `AbortController` para abortar (cancelar) la obtención de datos si
     // llega una nueva solicitud. Creamos un nuevo `AbortController` y registramos una `limpieza` (cleanup)
     // función que se llama cuando se vuelve a ejecutar esta función.
     const controller = new AbortController();
     cleanup(() => controller.abort());
     // 4.- Llamar a la función y obtener el resultado
-    return ergastF1ChampionshipRaceListAPI(races.year, controller);
+    return charactersAPI(controller);
   });
   return (
     <>
-      <h1>Formula 1 - Tabla de resultados {races.year}</h1>
-      <span>
-        Año:&nbsp;
-        <input
-          type="number"
-          min="1950"
-          max={new Date().getFullYear()}
-          value={races.year}
-          onInput$={(ev) => {
-            const takeValue = (ev.target as HTMLInputElement).value;
-            if (takeValue.length === 4) {
-              races.year = takeValue;
-            }
-          }}
-        />
-      </span>
+      <h1>Lista de Personajes principales de Breaking Bad</h1>
       <Resource
-        value={selectYearRacesResource}
+        value={charactersListResponse}
         onPending={() => <div>Cargando...</div>} // Mientras está ejecutando la carga
         onRejected={() => (
-          <div>Fallo a la hora de cargar la lista de carreras</div>
+          <div>Fallo a la hora de cargar la lista de personajes</div>
         )} // Rechazado
         onResolved={(result) => {
           return result.length ? (
             <ul class="list">
-              {result.map((race: any) => (
-                <li key={race.raceName.toLowerCase()}>
-                  <a href={race.url} target="_blank">
-                    {race.raceName}
-                  </a>{' '}
-                  ({race.date})
+              {result.map((character: any, index: number) => (
+                <li key={String(character.id).concat(character.name.toLowerCase())}>
+                  <a href={character.url} target="_blank">
+                    {character.name}
+                  </a>{' - '}
+                  ({character.description}) - <Link href={`/details/${index + 1}`}>Más detalles</Link>
                 </li>
               ))}
             </ul>
           ) : (
             <p>
-              Sin resultados - Comprueba que el año seleccionado está entre 1950
-              y {new Date().getFullYear()} (incluido)
+              Sin resultados - Comprueba que la API está en funcionamiento
             </p>
           );
         }}
       />
+      
     </>
   );
 });

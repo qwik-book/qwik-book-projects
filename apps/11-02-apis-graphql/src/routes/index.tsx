@@ -6,116 +6,101 @@ import {
 } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
 
-import { countriesGraphQLAPI } from '../api/countries-data';
+import { breakingBapCharactersGraphQLAPI } from '../api/characters';
 
 export default component$(() => {
-  const selectContinent = useSignal('');
-
+  const selectCharacter = useSignal(1);
   // 2.- Accedemos a la API
-  const continentsListResource = useResource$<any>(({ cleanup }) => {
+  const charactersListResource = useResource$<any>(({ cleanup }) => {
     const controller = new AbortController();
     cleanup(() => controller.abort());
     // Llamada a la función pasando únicamente la consulta en "query"
-    return countriesGraphQLAPI(
+    return breakingBapCharactersGraphQLAPI(
       {
         query: `{
-                continents {
-                    code
-                    name
-                }
-            }
+          characters {
+            id
+            name
+            votes
+          }
+        }
         `,
       },
       controller,
     );
   });
 
-  const countriesByContinentListResource = useResource$<any>(
+  const characterSelectResource = useResource$<any>(
     ({ track, cleanup }) => {
-      // 1.- Observamos los cambios del continente seleccionado
-      track(() => selectContinent.value);
-      console.log(selectContinent.value);
-      const controller = new AbortController();
-      cleanup(() => controller.abort());
-      // 2.- Consulta para obtener el lista de paises por continente seleccionado
+    // 1.- Observamos los cambios del continente seleccionado
+    track(() => selectCharacter.value);
+    
+    const controller = new AbortController();
+    cleanup(() => controller.abort());
+    // 2.- Consulta para obtener el lista de paises por continente seleccionado
 
-      return countriesGraphQLAPI(
+    return breakingBapCharactersGraphQLAPI(
         {
-          query: `
-                query getCountriesByContinent($filter: CountryFilterInput){
-                    countries(filter: $filter) {
-                        name
-                        capital
-                        currency
-                        phone
-                        continent {
-                            name
-                        }
-                    }
+            query: `
+              query getSelectCharacter($id: Int!) {
+                character(id: $id) {
+                  name
+                  description
+                  episodes
+                  url
+                  votes
                 }
+              }
             `,
-          variables: {
-            filter: {
-              continent: {
-                eq: selectContinent.value,
-              },
-            },
-          },
+            variables: { 
+                id: selectCharacter.value
+            }
         },
-        controller,
-      );
-    },
+        controller
+    );
+    }
   );
 
   // 3.- Pintamos el resultado
   return (
     <>
-      <h1>Countries</h1>
-      <p>
-        Seleccione el continente:{' '}
-        {selectContinent.value === ''
-          ? 'Seleccione uno por favor'
-          : selectContinent.value}
-      </p>
-      <hr />
+      <h1>Personajes Breaking Bad</h1>
+      <p>Personaje seleccionado: {selectCharacter.value}</p>
       <Resource
-        value={continentsListResource}
+            value={charactersListResource}
+            onPending={() => <div>Cargando...</div>}
+            onRejected={() => <div>Error al cargar la lista de personajes</div>}
+            onResolved={({ characters }) => {
+              return characters.length ? (
+              <div>
+                  {characters.map((character: any) => (
+                  <button key={character.name.toLowerCase()} onClick$={() => selectCharacter.value = character.id}>{character.name}</button>
+                  ))}
+              </div>
+              ) : (
+              <p>Sin resultados</p>
+              );
+          }}
+        />
+      <hr />
+    <Resource
+        value={characterSelectResource}
         onPending={() => <div>Cargando...</div>}
-        onRejected={() => <div>Error al cargar la lista de continentes</div>}
-        onResolved={({ continents }) => {
-          return continents.length ? (
-            <div>
-              {continents.map((continent: any) => (
-                <button
-                  key={continent.name.toLowerCase()}
-                  onClick$={() => (selectContinent.value = continent.code)}
-                >
-                  {continent.name}
-                </button>
+        onRejected={() => <div>Falla al cargar los detalles del personaje seleccionado {selectCharacter.value}</div>}
+        onResolved={({character}) => {
+          return (character ?
+          <ul class="list">
+              {Object.keys(character).map((key: any) => (
+              <li key={key.toLowerCase()}>
+                  {character[key]}
+              </li>
               ))}
-            </div>
-          ) : (
-            <p>Sin resultados</p>
+          </ul> : <p>Sin resultados</p>
           );
         }}
       />
-      <hr />
-      <Resource
-        value={countriesByContinentListResource}
-        onPending={() => <div>Cargando...</div>}
-        onRejected={() => <div>Error a la hora de cargar la información de paises</div>}
-        onResolved={({countries}) => {
-            return (countries.length ?
-            <ul class="list">
-                {countries.map((country: any) => (
-                <li class="list" key={country.name.toLowerCase()}>
-                    {country.name}
-                </li>
-                ))}
-            </ul> : <p>Sin resultados</p>
-            );
-        }}
-        />
+     
+      
     </>
   );
 });
