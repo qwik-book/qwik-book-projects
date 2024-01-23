@@ -7,6 +7,8 @@ export default component$(() => {
       <h1>
         Bienvenido a un nuevo proyecto de Qwik <span class="lightning">⚡️</span>
       </h1>
+      <p>En este caso estamos trabajando con el Unit Testing</p>
+      <p>El resultado de lo trabajado en este capítulo <a href="https://github.com/qwik-book/qwik-testing-vitest/tree/master">lo tenéis a continuación</a></p>
     </div>
   );
 });
