@@ -1,0 +1,18 @@
+
+  ❗️ [35mExpect significant performance loss in development.[39m
+  ❗️ [35mDisabling the browser's cache results in waterfall requests.[39m
+=============
+
+WARNING: You are currently running a version of TypeScript which is not officially supported by @typescript-eslint/typescript-estree.
+
+You may find that it works just fine, or you may not.
+
+SUPPORTED TYPESCRIPT VERSIONS: >=3.3.1 <5.1.0
+
+YOUR TYPESCRIPT VERSION: 5.1.6
+
+Please only submit bug reports when using the officially supported version.
+
+=============
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m5173[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m

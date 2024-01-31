@@ -1,0 +1,6369 @@
+{
+  "version": "6.0",
+  "nxVersion": "16.10.0",
+  "deps": {
+    "@builder.io/qwik-react": "0.5.0",
+    "@neondatabase/serverless": "^0.6.0",
+    "@types/react": "18.2.23",
+    "@types/react-dom": "18.2.8",
+    "@typescript-eslint/utils": "^6.20.0",
+    "@vanilla-extract/css": "^1.12.0",
+    "drizzle-orm": "^0.28.6",
+    "leaflet": "^1.9.4",
+    "qwik-nx": "1.0.11",
+    "react": "18.2.0",
+    "react-day-picker": "8.8.1",
+    "react-dom": "18.2.0",
+    "react-modern-calendar-datepicker": "^3.1.6",
+    "styled-vanilla-extract": "^0.5.4",
+    "@builder.io/qwik": "1.4.3",
+    "@builder.io/qwik-city": "1.4.3",
+    "@nx/eslint-plugin": "16.10.0",
+    "@nx/js": "16.10.0",
+    "@nx/linter": "16.10.0",
+    "@nx/vite": "16.10.0",
+    "@nx/workspace": "16.10.0",
+    "@types/leaflet": "1.9.4",
+    "@types/node": "^20.8.4",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
+    "@vitest/coverage-v8": "0.34.6",
+    "@vitest/ui": "~0.32.0",
+    "drizzle-kit": "^0.19.13",
+    "eslint": "8.56.0",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-qwik": "1.4.3",
+    "node-fetch": "~3.3.0",
+    "nx": "16.10.0",
+    "nx-cloud": "latest",
+    "prettier": "3.0.0",
+    "typescript": "5.1.6",
+    "undici": "5.25.2",
+    "vite": "4.4.9",
+    "vite-plugin-dts": "~3.6.0",
+    "vite-tsconfig-paths": "~4.2.1",
+    "vitest": "^0.32.4"
+  },
+  "pathMappings": {
+    "@qwik-books-projects/core": [
+      "libs/core/src/index.ts"
+    ],
+    "@qwik-books-projects/shared": [
+      "libs/shared/src/index.ts"
+    ]
+  },
+  "nxJsonPlugins": [],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": ".editorconfig",
+        "hash": "5443105041930014821"
+      },
+      {
+        "file": ".eslintignore",
+        "hash": "11192737202656287549"
+      },
+      {
+        "file": ".eslintrc.json",
+        "hash": "17866138117546000433"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "11608181557323256120"
+      },
+      {
+        "file": ".nvmrc",
+        "hash": "8895284311685162579"
+      },
+      {
+        "file": ".nx/cache/d/daemon.log",
+        "hash": "10058495285190795261"
+      },
+      {
+        "file": ".nx/cache/d/server-process.json",
+        "hash": "12879966896898717999"
+      },
+      {
+        "file": ".nx/cache/file-map.json",
+        "hash": "10417949103571640823"
+      },
+      {
+        "file": ".nx/cache/lockfile.hash",
+        "hash": "14808196140073402896"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/project-graph.html",
+        "hash": "17036869540637447991"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/3rdpartylicenses.txt",
+        "hash": "5667550289807473445"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/environment.js",
+        "hash": "17297850419212112641"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/favicon.ico",
+        "hash": "9303420814833116677"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/main.js",
+        "hash": "13551439496520482047"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/polyfills.js",
+        "hash": "5617236864114375205"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/runtime.js",
+        "hash": "9652903316845995179"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/styles.css",
+        "hash": "2125456314194136822"
+      },
+      {
+        "file": ".nx/cache/nx-console-project-graph/static/styles.js",
+        "hash": "13596360365094399219"
+      },
+      {
+        "file": ".nx/cache/parsed-lock-file.json",
+        "hash": "7174009563211398223"
+      },
+      {
+        "file": ".nx/cache/project-graph.json",
+        "hash": "8975455958226286870"
+      },
+      {
+        "file": ".nx/cache/run.json",
+        "hash": "9560239395112260989"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/14059156496128839146",
+        "hash": "2989947378094105298"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/2261731658094802910",
+        "hash": "9986081311303296545"
+      },
+      {
+        "file": ".prettierignore",
+        "hash": "8865097869854018350"
+      },
+      {
+        "file": ".prettierrc",
+        "hash": "16267754514737964994"
+      },
+      {
+        "file": ".vscode/extensions.json",
+        "hash": "16884713733442577066"
+      },
+      {
+        "file": "LICENSE",
+        "hash": "2321495792070978527"
+      },
+      {
+        "file": "README.md",
+        "hash": "17492905956655637462"
+      },
+      {
+        "file": "apps/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "libs/.gitkeep",
+        "hash": "3244421341483603138"
+      },
+      {
+        "file": "nx.json",
+        "hash": "7974061590957457475"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "14724253609601189706"
+      },
+      {
+        "file": "package.json",
+        "hash": "11431530044754142555"
+      },
+      {
+        "file": "tools/tsconfig.tools.json",
+        "hash": "16088922570277978783"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "16009916204288191101"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/5021969432667685714",
+        "hash": "305529460762486084"
+      },
+      {
+        "file": ".nx/cache/terminalOutputs/13257753792580149045",
+        "hash": "3244421341483603138"
+      }
+    ],
+    "projectFileMap": {
+      "14-events": [
+        {
+          "file": "apps/14-events/.eslintrc.json",
+          "hash": "2125954555320758926"
+        },
+        {
+          "file": "apps/14-events/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/14-events/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/14-events/package.json",
+          "hash": "1499984955905384431"
+        },
+        {
+          "file": "apps/14-events/project.json",
+          "hash": "12774297105662448291"
+        },
+        {
+          "file": "apps/14-events/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/14-events/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/14-events/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/14-events/src/components/current-target.tsx",
+          "hash": "2075390073706795068",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/event-object.tsx",
+          "hash": "16973158735533412494",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/inline.tsx",
+          "hash": "15569210931801473035",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/multiple-event-handler.tsx",
+          "hash": "7689058772860420538",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/prevent-default.tsx",
+          "hash": "6823154977711410295",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/prop-function-practice.tsx",
+          "hash": "8837932754435570771",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/prop-function.tsx",
+          "hash": "4205087018785695826",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/reuse-event-handler.tsx",
+          "hash": "15874384900667050775",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/synchronus-event-handling.tsx",
+          "hash": "5617362108230130456",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/use-on-document-middle-paint.tsx",
+          "hash": "6261902782132680856",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/use-on-document.tsx",
+          "hash": "11845968463501478981",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/use-on-window-screens-count-refreshs.tsx",
+          "hash": "10382681730926305558",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/use-on-window-screens.tsx",
+          "hash": "1863484428562368189",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/use-on-window.tsx",
+          "hash": "3016724083622117125",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/components/useon.tsx",
+          "hash": "3924240896241868885",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/global.css",
+          "hash": "18106346167525471640"
+        },
+        {
+          "file": "apps/14-events/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/routes/index.tsx",
+          "hash": "598101486054218512",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/14-events/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/14-events/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/14-events/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/14-events/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/14-events/vite.config.ts",
+          "hash": "13364397384866357790",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "01-first-steps": [
+        {
+          "file": "apps/01-first-steps/.eslintrc.json",
+          "hash": "5070793667328942867"
+        },
+        {
+          "file": "apps/01-first-steps/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/01-first-steps/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/01-first-steps/package.json",
+          "hash": "9545419632014717708"
+        },
+        {
+          "file": "apps/01-first-steps/project.json",
+          "hash": "17100131036064025699"
+        },
+        {
+          "file": "apps/01-first-steps/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/01-first-steps/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/01-first-steps/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/01-first-steps/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/01-first-steps/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/routes/contact/index.tsx",
+          "hash": "1701363624477500871",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/routes/layout.tsx",
+          "hash": "2382902838135580929",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/01-first-steps/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/01-first-steps/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/01-first-steps/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/01-first-steps/vite.config.ts",
+          "hash": "3225649809745921274",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "extra-01-quizapp": [
+        {
+          "file": "apps/extra-01-quizapp/.eslintrc.json",
+          "hash": "12644579309533426452"
+        },
+        {
+          "file": "apps/extra-01-quizapp/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/extra-01-quizapp/README.md",
+          "hash": "15441800174370001589"
+        },
+        {
+          "file": "apps/extra-01-quizapp/package.json",
+          "hash": "4573781333562553697"
+        },
+        {
+          "file": "apps/extra-01-quizapp/project.json",
+          "hash": "6207452734961591746"
+        },
+        {
+          "file": "apps/extra-01-quizapp/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/extra-01-quizapp/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/extra-01-quizapp/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/data/world-flags-questions.ts",
+          "hash": "4752046473676700672"
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/global.css",
+          "hash": "17721523029231410503"
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/routes/index.tsx",
+          "hash": "10921187043262339872",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "shared"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/extra-01-quizapp/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/extra-01-quizapp/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/extra-01-quizapp/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/extra-01-quizapp/vite.config.ts",
+          "hash": "5306807058379580197",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "04-01-basic-navigation": [
+        {
+          "file": "apps/04-01-basic-navigation/.eslintrc.json",
+          "hash": "13473156990465080363"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/package.json",
+          "hash": "11992128954838630930"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/project.json",
+          "hash": "4675570892796874962"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/components/core/footer.tsx",
+          "hash": "110051757113905193"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/components/core/header.tsx",
+          "hash": "3564315799623260800"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/components/core/menu.tsx",
+          "hash": "794584308764355366",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/global.css",
+          "hash": "3316746344881320495"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/routes/about/index.tsx",
+          "hash": "13891906994365009446",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/routes/index.tsx",
+          "hash": "10611089296356111552",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/routes/layout.tsx",
+          "hash": "17496756799871782204",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-01-basic-navigation/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/04-01-basic-navigation/vite.config.ts",
+          "hash": "8235495067083392811",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "core": [
+        {
+          "file": "libs/core/.eslintrc.json",
+          "hash": "4913116055085775285"
+        },
+        {
+          "file": "libs/core/README.md",
+          "hash": "11119797761314594977"
+        },
+        {
+          "file": "libs/core/project.json",
+          "hash": "13615853926408324967"
+        },
+        {
+          "file": "libs/core/src/index.ts",
+          "hash": "15971930370133673384"
+        },
+        {
+          "file": "libs/core/src/lib/components/footer/footer.css",
+          "hash": "39109150951453545"
+        },
+        {
+          "file": "libs/core/src/lib/components/footer/index.tsx",
+          "hash": "8403089239805620258",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/core/src/lib/components/header/header.css",
+          "hash": "15124865514308303028"
+        },
+        {
+          "file": "libs/core/src/lib/components/header/index.tsx",
+          "hash": "3064858860909129767",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/core/src/lib/components/icons/qwik.tsx",
+          "hash": "17408933057160147531"
+        },
+        {
+          "file": "libs/core/src/lib/components/router-head/index.tsx",
+          "hash": "14552809972613344766",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "libs/core/src/lib/core.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/core/src/lib/core.tsx",
+          "hash": "3766348987140568224",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/core/src/root.tsx",
+          "hash": "12678243580474410682"
+        },
+        {
+          "file": "libs/core/tsconfig.json",
+          "hash": "10377205902105735359"
+        },
+        {
+          "file": "libs/core/tsconfig.lib.json",
+          "hash": "12339470150393707710"
+        },
+        {
+          "file": "libs/core/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "libs/core/vite.config.ts",
+          "hash": "18084561831202170066",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:vite-tsconfig-paths",
+            "npm:vite",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "04-03-named-layouts": [
+        {
+          "file": "apps/04-03-named-layouts/.eslintrc.json",
+          "hash": "16425523623062482927"
+        },
+        {
+          "file": "apps/04-03-named-layouts/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/04-03-named-layouts/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/04-03-named-layouts/package.json",
+          "hash": "4110873820064831245"
+        },
+        {
+          "file": "apps/04-03-named-layouts/project.json",
+          "hash": "5818749472246327754"
+        },
+        {
+          "file": "apps/04-03-named-layouts/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/04-03-named-layouts/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/04-03-named-layouts/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/components/core/footer.tsx",
+          "hash": "110051757113905193"
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/components/core/header.tsx",
+          "hash": "3564315799623260800"
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/components/core/menu.tsx",
+          "hash": "7606813520180980168",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/global.css",
+          "hash": "3316746344881320495"
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/about/index.tsx",
+          "hash": "13891906994365009446",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/blog/index@only-header.tsx",
+          "hash": "17649000189709748596",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/contact/index@only-header.tsx",
+          "hash": "6894513720486266209",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/index.tsx",
+          "hash": "10611089296356111552",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/layout-only-header.tsx",
+          "hash": "11446432590105930002",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/layout.tsx",
+          "hash": "17496756799871782204",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-03-named-layouts/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/04-03-named-layouts/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/04-03-named-layouts/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/04-03-named-layouts/vite.config.ts",
+          "hash": "18076670053844835322",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "11-01-apis-rest": [
+        {
+          "file": "apps/11-01-apis-rest/.eslintrc.json",
+          "hash": "10712820953740948234"
+        },
+        {
+          "file": "apps/11-01-apis-rest/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/11-01-apis-rest/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/11-01-apis-rest/package.json",
+          "hash": "15336538613882842346"
+        },
+        {
+          "file": "apps/11-01-apis-rest/project.json",
+          "hash": "14796222739004847796"
+        },
+        {
+          "file": "apps/11-01-apis-rest/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/11-01-apis-rest/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/11-01-apis-rest/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/api/characters.ts",
+          "hash": "14804853593426327073"
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/global.css",
+          "hash": "14085367741796293759"
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/routes/details/[id]/index.tsx",
+          "hash": "6932542442015036069",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/routes/index.tsx",
+          "hash": "17413489605257709016",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/11-01-apis-rest/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/11-01-apis-rest/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/11-01-apis-rest/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/11-01-apis-rest/vite.config.ts",
+          "hash": "5688306094523459688",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "16-custom-hooks": [
+        {
+          "file": "apps/16-custom-hooks/.eslintrc.json",
+          "hash": "73524406235045967"
+        },
+        {
+          "file": "apps/16-custom-hooks/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/16-custom-hooks/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/16-custom-hooks/package.json",
+          "hash": "9181765593984494238"
+        },
+        {
+          "file": "apps/16-custom-hooks/project.json",
+          "hash": "12731864630458142367"
+        },
+        {
+          "file": "apps/16-custom-hooks/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/16-custom-hooks/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/16-custom-hooks/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/16-custom-hooks/src/components/counter-no-hook.tsx",
+          "hash": "13340994875796736460",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/components/counter-with-hook.tsx",
+          "hash": "9643241082222330676",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/components/mouse-position.tsx",
+          "hash": "3980866676016066810",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/components/our-location.tsx",
+          "hash": "4002272078723297231",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/components/theme-selection-hook.tsx",
+          "hash": "1126888855204539164",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/16-custom-hooks/src/hooks/useCounter.tsx",
+          "hash": "2340302180735879513",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/hooks/useGeolocation.tsx",
+          "hash": "12046187036493148578",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/hooks/useMousePosition.tsx",
+          "hash": "16925345754755751208",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/hooks/useTheme.tsx",
+          "hash": "18433222567389748882",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/routes/index.tsx",
+          "hash": "18347224364306003137",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/16-custom-hooks/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/16-custom-hooks/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/16-custom-hooks/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/16-custom-hooks/vite.config.ts",
+          "hash": "4172209317771486448",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "18-library-mode": [
+        {
+          "file": "apps/18-library-mode/.eslintrc.json",
+          "hash": "5369482290930200614"
+        },
+        {
+          "file": "apps/18-library-mode/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/18-library-mode/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/18-library-mode/package.json",
+          "hash": "9853530766667705883"
+        },
+        {
+          "file": "apps/18-library-mode/project.json",
+          "hash": "16394152585056045309"
+        },
+        {
+          "file": "apps/18-library-mode/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/18-library-mode/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/18-library-mode/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/18-library-mode/src/components/counter/index.tsx",
+          "hash": "7553643529198864255",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/components/hello/index.tsx",
+          "hash": "4280523153556321412",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/components/logo/index.tsx",
+          "hash": "16666635994846417388",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/18-library-mode/src/hooks/useCounter.tsx",
+          "hash": "2784562708038655945",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/index.ts",
+          "hash": "10520751009452362171"
+        },
+        {
+          "file": "apps/18-library-mode/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/routes/index.tsx",
+          "hash": "4122136111047275822",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/18-library-mode/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/18-library-mode/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/18-library-mode/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/18-library-mode/vite.config.ts",
+          "hash": "9014879963838256842",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx",
+            "npm:vite-plugin-dts"
+          ]
+        }
+      ],
+      "05-05-styles-styled-components": [
+        {
+          "file": "apps/05-05-styles-styled-components/.eslintrc.json",
+          "hash": "575177173679630579"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/package.json",
+          "hash": "6585129328834566357"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/project.json",
+          "hash": "396341807496313735"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/05-05-styles-styled-components/vite.config.ts",
+          "hash": "8740718263757549213",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "00-base": [
+        {
+          "file": "apps/00-base/.eslintrc.json",
+          "hash": "10712820953740948234"
+        },
+        {
+          "file": "apps/00-base/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/00-base/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/00-base/package.json",
+          "hash": "16738384318912516535"
+        },
+        {
+          "file": "apps/00-base/project.json",
+          "hash": "10613244074084139146"
+        },
+        {
+          "file": "apps/00-base/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/00-base/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/00-base/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/00-base/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/00-base/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/00-base/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/00-base/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/00-base/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/00-base/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/00-base/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/00-base/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/00-base/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/00-base/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/00-base/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/00-base/vite.config.ts",
+          "hash": "11450281098595440429",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "04-05-custom-404-page": [
+        {
+          "file": "apps/04-05-custom-404-page/.eslintrc.json",
+          "hash": "14460606330952563955"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/package.json",
+          "hash": "320049991126186602"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/project.json",
+          "hash": "14890082104926013940"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/global.css",
+          "hash": "17183120321036910464"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/routes/404.tsx",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/routes/account/404.tsx",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/routes/account/index.tsx",
+          "hash": "10439643030757616329",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/routes/index.tsx",
+          "hash": "18111137478922716087",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-05-custom-404-page/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/04-05-custom-404-page/vite.config.ts",
+          "hash": "16958379316200266529",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "13-04-forms-project": [
+        {
+          "file": "apps/13-04-forms-project/.eslintrc.json",
+          "hash": "17443991606178756979"
+        },
+        {
+          "file": "apps/13-04-forms-project/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/13-04-forms-project/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/13-04-forms-project/package.json",
+          "hash": "10035114336562893968"
+        },
+        {
+          "file": "apps/13-04-forms-project/project.json",
+          "hash": "16330876069054493293"
+        },
+        {
+          "file": "apps/13-04-forms-project/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/13-04-forms-project/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/13-04-forms-project/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/13-04-forms-project/src/components/form/input/index.tsx",
+          "hash": "10624327489527777993",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/components/form/validation-message/index.tsx",
+          "hash": "1039854658339072876",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/13-04-forms-project/src/hooks/useLocalStorage.tsx",
+          "hash": "1932475714666008283",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/routes/index.css",
+          "hash": "18061249660804021359"
+        },
+        {
+          "file": "apps/13-04-forms-project/src/routes/index.tsx",
+          "hash": "13172356658185401419",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-04-forms-project/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/13-04-forms-project/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/13-04-forms-project/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/13-04-forms-project/vite.config.ts",
+          "hash": "6623881146546827668",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "02-02-routing-advanced": [
+        {
+          "file": "apps/02-02-routing-advanced/.eslintrc.json",
+          "hash": "17309947310866566725"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/package.json",
+          "hash": "6129777558959329777"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/project.json",
+          "hash": "17498751631026358145"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/routes/product/[productId]/details/index.tsx",
+          "hash": "12349332073143550887",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/routes/product/[productId]/index.tsx",
+          "hash": "13653716117305906355",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-02-routing-advanced/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/02-02-routing-advanced/vite.config.ts",
+          "hash": "3225649809745921274",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "07-ssr": [
+        {
+          "file": "apps/07-ssr/.eslintrc.json",
+          "hash": "12570293348196697557"
+        },
+        {
+          "file": "apps/07-ssr/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/07-ssr/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/07-ssr/package.json",
+          "hash": "15323043369522590227"
+        },
+        {
+          "file": "apps/07-ssr/project.json",
+          "hash": "101589917311378030"
+        },
+        {
+          "file": "apps/07-ssr/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/07-ssr/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/07-ssr/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/07-ssr/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/07-ssr/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/src/routes/index.tsx",
+          "hash": "6309076051181402893",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/07-ssr/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/07-ssr/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/07-ssr/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/07-ssr/vite.config.ts",
+          "hash": "16196026362501106577",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "13-02-forms-basic-qwik": [
+        {
+          "file": "apps/13-02-forms-basic-qwik/.eslintrc.json",
+          "hash": "9736760369405648513"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/package.json",
+          "hash": "6703842714522265301"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/project.json",
+          "hash": "17582247624064296586"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/routes/index.css",
+          "hash": "2486622849275231028"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/routes/index.tsx",
+          "hash": "17513117564782947706",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/13-02-forms-basic-qwik/vite.config.ts",
+          "hash": "6716266823473414914",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "04-06-dynamic-404-pages": [
+        {
+          "file": "apps/04-06-dynamic-404-pages/.eslintrc.json",
+          "hash": "13852173176133743332"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/package.json",
+          "hash": "11920243947405108892"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/project.json",
+          "hash": "10836657043085662689"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/data/products.ts",
+          "hash": "6215766863728740944"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/routes/product/[productId]/index.tsx",
+          "hash": "10374761015865313375",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/04-06-dynamic-404-pages/vite.config.ts",
+          "hash": "3640617360208269821",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "11-02-apis-graphql": [
+        {
+          "file": "apps/11-02-apis-graphql/.eslintrc.json",
+          "hash": "10712820953740948234"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/package.json",
+          "hash": "6365885458334808255"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/project.json",
+          "hash": "1143828917997168539"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/api/characters.ts",
+          "hash": "9325172773307448765"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/global.css",
+          "hash": "3359166499284120630"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/routes/index.tsx",
+          "hash": "7231686303438461804",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/11-02-apis-graphql/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/11-02-apis-graphql/vite.config.ts",
+          "hash": "9511576243440017915",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "09-state-management-ii": [
+        {
+          "file": "apps/09-state-management-ii/.eslintrc.json",
+          "hash": "11745094349319282736"
+        },
+        {
+          "file": "apps/09-state-management-ii/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/09-state-management-ii/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/09-state-management-ii/package.json",
+          "hash": "15840662109181060100"
+        },
+        {
+          "file": "apps/09-state-management-ii/project.json",
+          "hash": "9173942319575865784"
+        },
+        {
+          "file": "apps/09-state-management-ii/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/09-state-management-ii/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/09-state-management-ii/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-basic.tsx",
+          "hash": "12145442854238016654",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-new-text-use-store-context.tsx",
+          "hash": "4999679248711593588",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-new-text-use-store-props.tsx",
+          "hash": "3665375597752962519",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-new-text-use-store.tsx",
+          "hash": "16414762289236322303",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-new-text.tsx",
+          "hash": "5917986558762228609",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-practice.tsx",
+          "hash": "10039796313271772245",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/components/use-computed-to-uppercase.tsx",
+          "hash": "11666188061927113719",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/global.css",
+          "hash": "12453610569610746728"
+        },
+        {
+          "file": "apps/09-state-management-ii/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/routes/index.tsx",
+          "hash": "14973892212436808966",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/09-state-management-ii/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/09-state-management-ii/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/09-state-management-ii/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/09-state-management-ii/vite.config.ts",
+          "hash": "16949756683665965990",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "06-conversion-html-qwik-i": [
+        {
+          "file": "apps/06-conversion-html-qwik-i/.eslintrc.json",
+          "hash": "1097691099882873342"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/package.json",
+          "hash": "2694875513811541410"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/README.md",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/chapters.css",
+          "hash": "241984446837433422"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/chapters.html",
+          "hash": "17290838189132019336"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/chapters.js",
+          "hash": "12538921763295392720"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/icons/credit-card.svg",
+          "hash": "16289065870238505396"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/icons/favicon.ico",
+          "hash": "18197698816649961942"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/icons/folder-open.svg",
+          "hash": "2727056679266528648"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/icons/graduate.svg",
+          "hash": "11175415672506973345"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/profile/girl.webp",
+          "hash": "10865550609299847664"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/profile/men_programmer.webp",
+          "hash": "16724147572233102495"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/profile/programmer-girl.webp",
+          "hash": "2089524669519063630"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/profile/qwik.webp",
+          "hash": "576232145870918026"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/img/projects/map.webp",
+          "hash": "5919942975038475690"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/index.html",
+          "hash": "16561317096510205755"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/index.js",
+          "hash": "7975656127900467384"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/projects.html",
+          "hash": "13120960718411161890"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/practice/html-book-template/styles.css",
+          "hash": "5523484324483280628"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/project.json",
+          "hash": "11189005815523126134"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/icons/credit-card.svg",
+          "hash": "16289065870238505396"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/icons/favicon.ico",
+          "hash": "18197698816649961942"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/icons/folder-open.svg",
+          "hash": "2727056679266528648"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/icons/graduate.svg",
+          "hash": "11175415672506973345"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/profile/girl.webp",
+          "hash": "10865550609299847664"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/profile/men_programmer.webp",
+          "hash": "16724147572233102495"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/profile/programmer-girl.webp",
+          "hash": "2089524669519063630"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/profile/qwik.webp",
+          "hash": "576232145870918026"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/img/projects/map.webp",
+          "hash": "5919942975038475690"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/components/core/footer.tsx",
+          "hash": "7392739626085920540",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/components/core/header.tsx",
+          "hash": "10216063047922151721",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/components/router-head/index.tsx",
+          "hash": "2502388945667778530",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/global.css",
+          "hash": "5523484324483280628"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/root.tsx",
+          "hash": "9400126505368438040",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/routes/chapters/index.tsx",
+          "hash": "4299579815937314060",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/routes/index.tsx",
+          "hash": "2826281597586068343",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/routes/layout.tsx",
+          "hash": "13508803362267753628",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/routes/projects/index.tsx",
+          "hash": "12794832855985739774",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/06-conversion-html-qwik-i/vite.config.ts",
+          "hash": "2695131955936038040",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "12-lifecycles": [
+        {
+          "file": "apps/12-lifecycles/.eslintrc.json",
+          "hash": "1443816494800737735"
+        },
+        {
+          "file": "apps/12-lifecycles/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/12-lifecycles/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/12-lifecycles/package.json",
+          "hash": "7172805247098004920"
+        },
+        {
+          "file": "apps/12-lifecycles/project.json",
+          "hash": "8830964552180891564"
+        },
+        {
+          "file": "apps/12-lifecycles/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/12-lifecycles/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/12-lifecycles/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/12-lifecycles/src/components/use-task-cleanup.tsx",
+          "hash": "5303210942180567450",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/components/use-task-dom-elements.tsx",
+          "hash": "115164689092417024",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/components/use-task-on-mount.tsx",
+          "hash": "4958580114318155444",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/components/use-task-with-track-function.tsx",
+          "hash": "2734560037217740783",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/components/use-task-with-track.tsx",
+          "hash": "13395186376755111978",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/components/use-visible-task.tsx",
+          "hash": "17385918107206752258",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/global.css",
+          "hash": "13291713750337177233"
+        },
+        {
+          "file": "apps/12-lifecycles/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/routes/index.tsx",
+          "hash": "3028860652641749246",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/12-lifecycles/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/12-lifecycles/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/12-lifecycles/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/12-lifecycles/vite.config.ts",
+          "hash": "13916535924280906716",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "17-testing": [
+        {
+          "file": "apps/17-testing/.eslintrc.json",
+          "hash": "17727766434326846348"
+        },
+        {
+          "file": "apps/17-testing/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/17-testing/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/17-testing/package.json",
+          "hash": "166374359157920394"
+        },
+        {
+          "file": "apps/17-testing/project.json",
+          "hash": "7205143090365051764"
+        },
+        {
+          "file": "apps/17-testing/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/17-testing/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/17-testing/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/17-testing/src/components/counter/index.spec.tsx",
+          "hash": "2611904173856764258",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:vitest"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/components/counter/index.tsx",
+          "hash": "7965808944454425807",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/17-testing/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/routes/index.tsx",
+          "hash": "13383042718996162905",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/17-testing/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/17-testing/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/17-testing/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/17-testing/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/17-testing/vite.config.ts",
+          "hash": "9119771701441355134",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "10-conversion-html-qwik-ii": [
+        {
+          "file": "apps/10-conversion-html-qwik-ii/.eslintrc.json",
+          "hash": "14732510267865869969"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/package.json",
+          "hash": "2894752133920490679"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/project.json",
+          "hash": "4255845164456394875"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/icons/credit-card.svg",
+          "hash": "16289065870238505396"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/icons/favicon.ico",
+          "hash": "18197698816649961942"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/icons/folder-open.svg",
+          "hash": "2727056679266528648"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/icons/graduate.svg",
+          "hash": "11175415672506973345"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/profile/girl.webp",
+          "hash": "10865550609299847664"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/profile/men_programmer.webp",
+          "hash": "16724147572233102495"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/profile/programmer-girl.webp",
+          "hash": "2089524669519063630"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/profile/qwik.webp",
+          "hash": "576232145870918026"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/img/projects/map.webp",
+          "hash": "5919942975038475690"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/components/core/footer.tsx",
+          "hash": "7392739626085920540",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/components/core/header.tsx",
+          "hash": "10216063047922151721",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/components/router-head/index.tsx",
+          "hash": "2502388945667778530",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/data/chapters.ts",
+          "hash": "12968670255054129655"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/global.css",
+          "hash": "5523484324483280628"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/root.tsx",
+          "hash": "9400126505368438040",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/routes/chapters/index.tsx",
+          "hash": "12214743826788281257",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "shared"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/routes/index.tsx",
+          "hash": "11043256960598798054",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/routes/layout.tsx",
+          "hash": "13508803362267753628",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/routes/projects/index.tsx",
+          "hash": "12794832855985739774",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/10-conversion-html-qwik-ii/vite.config.ts",
+          "hash": "4494176528046036161",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "08-state-management-i": [
+        {
+          "file": "apps/08-state-management-i/.eslintrc.json",
+          "hash": "8605335041270655270"
+        },
+        {
+          "file": "apps/08-state-management-i/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/08-state-management-i/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/08-state-management-i/package.json",
+          "hash": "8368919519720885936"
+        },
+        {
+          "file": "apps/08-state-management-i/project.json",
+          "hash": "6150625478162893106"
+        },
+        {
+          "file": "apps/08-state-management-i/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/08-state-management-i/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/08-state-management-i/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/signal/basic.tsx",
+          "hash": "14214894079688983099",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/signal/context.tsx",
+          "hash": "711072327431782765",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/signal/index.tsx",
+          "hash": "2251944778266272712"
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/signal/props.tsx",
+          "hash": "5943297370249609064",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/store/basic.tsx",
+          "hash": "7732217182808393897",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/store/context.tsx",
+          "hash": "2581719056955625351",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/store/index.tsx",
+          "hash": "17313718357304494218"
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/store/no-recursivity.tsx",
+          "hash": "3559665152681807220",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/store/props.tsx",
+          "hash": "7956371046405805827",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/components/state/store/recursivity.tsx",
+          "hash": "8289789739491851256",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/global.css",
+          "hash": "1523172335409273330"
+        },
+        {
+          "file": "apps/08-state-management-i/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/routes/index.tsx",
+          "hash": "4603409639399084671",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/08-state-management-i/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/08-state-management-i/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/08-state-management-i/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/08-state-management-i/vite.config.ts",
+          "hash": "194578088665168922",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "20-react-integration": [
+        {
+          "file": "apps/20-react-integration/.eslintrc.json",
+          "hash": "18120793816022520875"
+        },
+        {
+          "file": "apps/20-react-integration/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/20-react-integration/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/20-react-integration/package.json",
+          "hash": "10016523859016926256"
+        },
+        {
+          "file": "apps/20-react-integration/project.json",
+          "hash": "10702107450469769636"
+        },
+        {
+          "file": "apps/20-react-integration/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/20-react-integration/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/20-react-integration/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/20-react-integration/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/button-display/index.tsx",
+          "hash": "6767306911521432253",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/button-display/react.tsx",
+          "hash": "4365632564821801317"
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/default/index.tsx",
+          "hash": "5082383500166001145",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/default/react.tsx",
+          "hash": "11703455654097171046",
+          "deps": [
+            "npm:react",
+            "npm:react-modern-calendar-datepicker"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/index.tsx",
+          "hash": "2229359960390877279"
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/multiple/index.tsx",
+          "hash": "9019551517139179916",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/multiple/react.tsx",
+          "hash": "13828479920806393002",
+          "deps": [
+            "npm:react",
+            "npm:react-modern-calendar-datepicker"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/multiple-plus/index.tsx",
+          "hash": "7485729593696157028",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/multiple-plus/react.tsx",
+          "hash": "9098593963712647235",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:react",
+            "npm:react-modern-calendar-datepicker"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/range/index.tsx",
+          "hash": "12824976655532230961",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/calendar-datepicker/range/react.tsx",
+          "hash": "15043841956774785780",
+          "deps": [
+            "npm:react",
+            "npm:react-modern-calendar-datepicker"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/counter/index.tsx",
+          "hash": "15859736785536859966",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/counter/react.tsx",
+          "hash": "6031791621574335545",
+          "deps": [
+            "npm:react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/custom-hello/index.tsx",
+          "hash": "7414490385699626264",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/custom-hello/react.tsx",
+          "hash": "14373644325031269262"
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/date-picker/index.tsx",
+          "hash": "6177285467302888573",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/date-picker/react.tsx",
+          "hash": "14996730171720655795",
+          "deps": [
+            "npm:date-fns",
+            "npm:react",
+            "npm:react-day-picker"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/hello/index.tsx",
+          "hash": "15218985396905778213",
+          "deps": [
+            "npm:@builder.io/qwik-react"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/integrations/react/hello/react.tsx",
+          "hash": "12814155688130417963"
+        },
+        {
+          "file": "apps/20-react-integration/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/routes/index.tsx",
+          "hash": "9272742477268197868",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:./../../../../node_modules/react-day-picker/dist/style.css?inline",
+            "npm:./../../../../node_modules/react-modern-calendar-datepicker/lib/DatePicker.css?inline"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/routes/layout.tsx",
+          "hash": "17418011656502051241",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/src/routes/service-worker.ts",
+          "hash": "12052162101020602501",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/20-react-integration/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/20-react-integration/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/20-react-integration/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/20-react-integration/vite.config.ts",
+          "hash": "16380159309057048921",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx",
+            "npm:@builder.io/qwik-react"
+          ]
+        }
+      ],
+      "05-02-styles-usestyles": [
+        {
+          "file": "apps/05-02-styles-usestyles/.eslintrc.json",
+          "hash": "9557547849482451636"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/package.json",
+          "hash": "4194628217981956509"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/project.json",
+          "hash": "15287130411613222084"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/global.css",
+          "hash": "11403976374514048604"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/root.tsx",
+          "hash": "4056286067788564343",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/routes/index.tsx",
+          "hash": "4906326152046679895",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/routes/second/index.tsx",
+          "hash": "7432097836914091795",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/05-02-styles-usestyles/vite.config.ts",
+          "hash": "4918265070750996600",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "05-03-styles-usestylesscoped": [
+        {
+          "file": "apps/05-03-styles-usestylesscoped/.eslintrc.json",
+          "hash": "16427847800228959646"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/package.json",
+          "hash": "5086012208663876504"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/project.json",
+          "hash": "11040649221913184926"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/routes/index.tsx",
+          "hash": "17189541134656407214",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/routes/second/index.tsx",
+          "hash": "7432097836914091795",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/05-03-styles-usestylesscoped/vite.config.ts",
+          "hash": "16264035705303119155",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "02-03-routing-wildcard": [
+        {
+          "file": "apps/02-03-routing-wildcard/.eslintrc.json",
+          "hash": "15313416969018604624"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/package.json",
+          "hash": "9626728726287032532"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/project.json",
+          "hash": "11394325770079895768"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/routes/product/[...productIds]/details/index.tsx",
+          "hash": "10317026952870909153",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/routes/product/[...productIds]/index.tsx",
+          "hash": "8448053587249411178",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/02-03-routing-wildcard/vite.config.ts",
+          "hash": "17497024597875252164",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "04-04-nested-layouts": [
+        {
+          "file": "apps/04-04-nested-layouts/.eslintrc.json",
+          "hash": "13895371504536581683"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/package.json",
+          "hash": "7559480248084478511"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/project.json",
+          "hash": "13175602137473218589"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/global.css",
+          "hash": "2223023531520187109"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/about/about-one/index.tsx",
+          "hash": "13767830784846595794",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/about/about-one/layout.tsx",
+          "hash": "6946582582231601622",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/about/index.tsx",
+          "hash": "13713306409246514591",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/about/layout.tsx",
+          "hash": "4765569792305793330",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/index.tsx",
+          "hash": "3244884007736554845",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/layout.tsx",
+          "hash": "1113862253887689157",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-04-nested-layouts/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/04-04-nested-layouts/vite.config.ts",
+          "hash": "73375792828845484",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "02-04-routing-grouped": [
+        {
+          "file": "apps/02-04-routing-grouped/.eslintrc.json",
+          "hash": "5815004026673773014"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/package.json",
+          "hash": "14574114848226758000"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/project.json",
+          "hash": "10606863253482455116"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/(products)/detail/index.tsx",
+          "hash": "14664506050010161116",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/(products)/preview/index.tsx",
+          "hash": "13980368087139964921",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/blog/index.tsx",
+          "hash": "13719729958942792868",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/contact/index.tsx",
+          "hash": "10414812245967998552",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/portfolio/index.tsx",
+          "hash": "6341800493429071255",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/readme/hello.tsx",
+          "hash": "2089386591961078686",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/readme/index.mdx",
+          "hash": "9866170084357284941"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-04-routing-grouped/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/02-04-routing-grouped/vite.config.ts",
+          "hash": "2219048795343650397",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "13-01-forms-basic": [
+        {
+          "file": "apps/13-01-forms-basic/.eslintrc.json",
+          "hash": "11067313514874511829"
+        },
+        {
+          "file": "apps/13-01-forms-basic/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/13-01-forms-basic/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/13-01-forms-basic/package.json",
+          "hash": "17729778422003072861"
+        },
+        {
+          "file": "apps/13-01-forms-basic/project.json",
+          "hash": "9790017912245944575"
+        },
+        {
+          "file": "apps/13-01-forms-basic/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/13-01-forms-basic/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/13-01-forms-basic/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/routes/index.css",
+          "hash": "2486622849275231028"
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/routes/index.tsx",
+          "hash": "12850545336235990018",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-01-forms-basic/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/13-01-forms-basic/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/13-01-forms-basic/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/13-01-forms-basic/vite.config.ts",
+          "hash": "15854818480090076420",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "02-01-routing-basic": [
+        {
+          "file": "apps/02-01-routing-basic/.eslintrc.json",
+          "hash": "9805950565823430219"
+        },
+        {
+          "file": "apps/02-01-routing-basic/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/02-01-routing-basic/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/02-01-routing-basic/package.json",
+          "hash": "970436563152750039"
+        },
+        {
+          "file": "apps/02-01-routing-basic/project.json",
+          "hash": "6383688138821240484"
+        },
+        {
+          "file": "apps/02-01-routing-basic/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/02-01-routing-basic/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/02-01-routing-basic/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/blog/index.tsx",
+          "hash": "13719729958942792868",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/contact/index.tsx",
+          "hash": "10414812245967998552",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/index.tsx",
+          "hash": "14525838551358503899",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/portfolio/index.tsx",
+          "hash": "6341800493429071255",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/readme/hello.tsx",
+          "hash": "2089386591961078686",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/readme/index.mdx",
+          "hash": "9866170084357284941"
+        },
+        {
+          "file": "apps/02-01-routing-basic/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/02-01-routing-basic/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/02-01-routing-basic/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/02-01-routing-basic/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/02-01-routing-basic/vite.config.ts",
+          "hash": "3225649809745921274",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "03-components": [
+        {
+          "file": "apps/03-components/.eslintrc.json",
+          "hash": "556717415058701991"
+        },
+        {
+          "file": "apps/03-components/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/03-components/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/03-components/package.json",
+          "hash": "8423528530418446987"
+        },
+        {
+          "file": "apps/03-components/project.json",
+          "hash": "17211807430568198774"
+        },
+        {
+          "file": "apps/03-components/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/03-components/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/03-components/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/03-components/src/components/age/index.tsx",
+          "hash": "5747492035329055778"
+        },
+        {
+          "file": "apps/03-components/src/components/hobbies/index.tsx",
+          "hash": "16777064628910231291"
+        },
+        {
+          "file": "apps/03-components/src/components/title/index.tsx",
+          "hash": "7455609780877047026"
+        },
+        {
+          "file": "apps/03-components/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/03-components/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/03-components/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/03-components/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/03-components/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/03-components/src/routes/index.tsx",
+          "hash": "3551576110955711905",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/03-components/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/03-components/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/03-components/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/03-components/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/03-components/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/03-components/vite.config.ts",
+          "hash": "16722948411627467132",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "extra-02-rock-scissors-paper-game": [
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/.eslintrc.json",
+          "hash": "8638514024508169930"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/package.json",
+          "hash": "6942126402754528230"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/project.json",
+          "hash": "12223478026490202867"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/public/img/paper.png",
+          "hash": "17693788788697584726"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/public/img/rock.png",
+          "hash": "11057666106419050677"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/public/img/scissors.png",
+          "hash": "16896191679323830190"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/game/badge.tsx",
+          "hash": "16923109788189210903",
+          "deps": [
+            "npm:~/models/badge"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/game/choices.tsx",
+          "hash": "15147892134132362085",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:~/models/game"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/game/image.tsx",
+          "hash": "14474914116687210143",
+          "deps": [
+            "npm:~/models/image"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/game/score-board.tsx",
+          "hash": "14598626807122656258",
+          "deps": [
+            "npm:~/models/score-board"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/game/score.tsx",
+          "hash": "4954835551923494093",
+          "deps": [
+            "npm:~/models/score-board"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/game/title.tsx",
+          "hash": "14762014831610461114"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/components/router-head/router-head.tsx",
+          "hash": "11243044365060691416",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/global.css",
+          "hash": "8168321094662625220"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/models/badge.ts",
+          "hash": "8157697062478047173"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/models/game.ts",
+          "hash": "403432160437359089"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/models/image.ts",
+          "hash": "5283164193355013994"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/models/score-board.ts",
+          "hash": "13083007895949023585"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/routes/index.tsx",
+          "hash": "1992625726234340862",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/extra-02-rock-scissors-paper-game/vite.config.ts",
+          "hash": "9915133146798236303",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "05-06-styles-finish-practice": [
+        {
+          "file": "apps/05-06-styles-finish-practice/.eslintrc.json",
+          "hash": "16185552371615129705"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/package.json",
+          "hash": "50227092783318149"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/project.json",
+          "hash": "2787484246311387714"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/routes/index.tsx",
+          "hash": "817680387460529213",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/src/styles/colors.css.ts",
+          "hash": "15825141525847918405",
+          "deps": [
+            "npm:styled-vanilla-extract"
+          ]
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/05-06-styles-finish-practice/vite.config.ts",
+          "hash": "15820702519079210588",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx",
+            "npm:styled-vanilla-extract"
+          ]
+        }
+      ],
+      "13-03-forms-basic-qwik-zod": [
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/.eslintrc.json",
+          "hash": "6659627746824195387"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/package.json",
+          "hash": "11423141627501748716"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/project.json",
+          "hash": "15356338581156413267"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/components/button/submit/index.tsx",
+          "hash": "8486662881940914869",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/components/input/index.tsx",
+          "hash": "13379484132538831061",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/components/message/index.tsx",
+          "hash": "9837115254531709918",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/routes/index.css",
+          "hash": "2486622849275231028"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/routes/index.tsx",
+          "hash": "1188801572047598610",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/13-03-forms-basic-qwik-zod/vite.config.ts",
+          "hash": "656091359042027786",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "19-integration": [
+        {
+          "file": "apps/19-integration/.eslintrc.json",
+          "hash": "296456617490406306"
+        },
+        {
+          "file": "apps/19-integration/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/19-integration/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/19-integration/package.json",
+          "hash": "4379277653685770589"
+        },
+        {
+          "file": "apps/19-integration/project.json",
+          "hash": "9460462616615554101"
+        },
+        {
+          "file": "apps/19-integration/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/19-integration/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/19-integration/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/19-integration/src/components/leaflet-map/index.tsx",
+          "hash": "6886351003687182003",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:leaflet",
+            [
+              "npm:leaflet",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/19-integration/src/helpers/boundary-box.tsx",
+          "hash": "16911234848552913427",
+          "deps": [
+            "npm:leaflet"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/models/location.ts",
+          "hash": "12439002402087733922"
+        },
+        {
+          "file": "apps/19-integration/src/models/map.ts",
+          "hash": "15304155112635123821",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/routes/basic-map/index.tsx",
+          "hash": "182590140933906889",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:../../../../../node_modules/leaflet/dist/leaflet.css?inline"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/routes/index.tsx",
+          "hash": "4387401110744206455",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/19-integration/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/19-integration/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/19-integration/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/19-integration/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/19-integration/vite.config.ts",
+          "hash": "16159704892831060292",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "05-01-styles-global": [
+        {
+          "file": "apps/05-01-styles-global/.eslintrc.json",
+          "hash": "17303677913829105495"
+        },
+        {
+          "file": "apps/05-01-styles-global/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/05-01-styles-global/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/05-01-styles-global/package.json",
+          "hash": "3998270307897821766"
+        },
+        {
+          "file": "apps/05-01-styles-global/project.json",
+          "hash": "2599622509768999849"
+        },
+        {
+          "file": "apps/05-01-styles-global/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/05-01-styles-global/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/05-01-styles-global/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/05-01-styles-global/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/src/global.css",
+          "hash": "14364875246099213715"
+        },
+        {
+          "file": "apps/05-01-styles-global/src/root.tsx",
+          "hash": "17973141780986875064",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/src/routes/index.tsx",
+          "hash": "18427258408621094554",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-01-styles-global/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/05-01-styles-global/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/05-01-styles-global/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/05-01-styles-global/vite.config.ts",
+          "hash": "13672747868851396034",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "shared": [
+        {
+          "file": "libs/shared/.eslintrc.json",
+          "hash": "5254650279385635239"
+        },
+        {
+          "file": "libs/shared/README.md",
+          "hash": "11786132251247811791"
+        },
+        {
+          "file": "libs/shared/project.json",
+          "hash": "8118730269835998482"
+        },
+        {
+          "file": "libs/shared/src/index.ts",
+          "hash": "17345750392365767923"
+        },
+        {
+          "file": "libs/shared/src/lib/components/accordion/index.tsx",
+          "hash": "4854193433442517231",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/components/accordion/style.css",
+          "hash": "24795759420159765"
+        },
+        {
+          "file": "libs/shared/src/lib/components/alert/index.tsx",
+          "hash": "1193183150139950087",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/components/alert/style.css",
+          "hash": "14767350183194478923"
+        },
+        {
+          "file": "libs/shared/src/lib/components/image/index.tsx",
+          "hash": "16815278833702945672",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/shared/src/lib/models/alert.ts",
+          "hash": "209803787601592763"
+        },
+        {
+          "file": "libs/shared/src/lib/models/image.ts",
+          "hash": "548911851915448017"
+        },
+        {
+          "file": "libs/shared/src/lib/models/index.ts",
+          "hash": "9146580480250014223"
+        },
+        {
+          "file": "libs/shared/src/lib/shared.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "libs/shared/src/lib/shared.tsx",
+          "hash": "2123083293239196925",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "libs/shared/src/root.tsx",
+          "hash": "4967945757279378710"
+        },
+        {
+          "file": "libs/shared/tsconfig.json",
+          "hash": "11346012477154819182"
+        },
+        {
+          "file": "libs/shared/tsconfig.lib.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "libs/shared/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "libs/shared/vite.config.ts",
+          "hash": "6207185869155394795",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:vite-tsconfig-paths",
+            "npm:vite",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "04-02-grouped-layouts": [
+        {
+          "file": "apps/04-02-grouped-layouts/.eslintrc.json",
+          "hash": "8325141319857642567"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/package.json",
+          "hash": "5126601759639370181"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/project.json",
+          "hash": "11111254201330254235"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/components/core/footer.tsx",
+          "hash": "110051757113905193"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/components/core/header.tsx",
+          "hash": "3564315799623260800"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/components/core/menu.tsx",
+          "hash": "7606813520180980168",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/global.css",
+          "hash": "3316746344881320495"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/(complete)/about/index.tsx",
+          "hash": "13891906994365009446",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/(complete)/index.tsx",
+          "hash": "10611089296356111552",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/(complete)/layout.tsx",
+          "hash": "17054861218086828828",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/(only-header)/blog/index.tsx",
+          "hash": "17649000189709748596",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/(only-header)/contact/index.tsx",
+          "hash": "6894513720486266209",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/(only-header)/layout.tsx",
+          "hash": "17314454103031813834",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/04-02-grouped-layouts/vite.config.ts",
+          "hash": "7382387825340905568",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "15-content-projection": [
+        {
+          "file": "apps/15-content-projection/.eslintrc.json",
+          "hash": "4103198446479844406"
+        },
+        {
+          "file": "apps/15-content-projection/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/15-content-projection/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/15-content-projection/package.json",
+          "hash": "7263020288489096500"
+        },
+        {
+          "file": "apps/15-content-projection/project.json",
+          "hash": "18270701071522635709"
+        },
+        {
+          "file": "apps/15-content-projection/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/15-content-projection/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/15-content-projection/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/15-content-projection/src/components/basic-slot-random.tsx",
+          "hash": "1062034497452950751",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/components/basic-slot.tsx",
+          "hash": "2000454360893465328",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/components/fallback-content.tsx",
+          "hash": "9235998371141026026",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/components/named-slot-duplicate-reference.tsx",
+          "hash": "2938991174302296983",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/components/named-slot-without-one-reference.tsx",
+          "hash": "17502297901525850605",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/components/named-slot.tsx",
+          "hash": "13104335803725293684",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/components/named-slots-conditional.tsx",
+          "hash": "15897940510969078768",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/global.css",
+          "hash": "18106346167525471640"
+        },
+        {
+          "file": "apps/15-content-projection/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/routes/index.tsx",
+          "hash": "10602299238506572455",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/15-content-projection/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/15-content-projection/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/15-content-projection/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/15-content-projection/vite.config.ts",
+          "hash": "17857366837689345994",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx"
+          ]
+        }
+      ],
+      "05-04-styles-css-in-js": [
+        {
+          "file": "apps/05-04-styles-css-in-js/.eslintrc.json",
+          "hash": "4237363743237455195"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/.prettierignore",
+          "hash": "4404720512232629990"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/README.md",
+          "hash": "3126197185078960666"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/package.json",
+          "hash": "2097477168876058683"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/project.json",
+          "hash": "9557365078569799667"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/public/favicon.svg",
+          "hash": "446107399934622830"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/public/manifest.json",
+          "hash": "12573047294351719872"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/public/robots.txt",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/entry.dev.tsx",
+          "hash": "11105446068029354798",
+          "deps": [
+            "npm:@builder.io/qwik"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/entry.preview.tsx",
+          "hash": "12112155415044047334",
+          "deps": [
+            "npm:@builder.io/qwik-city",
+            "npm:@qwik-city-plan"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/entry.ssr.tsx",
+          "hash": "7540504042726582659",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@qwik-client-manifest"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/global.css",
+          "hash": "10945247368570588459"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/root.tsx",
+          "hash": "10937566091735818702",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/routes/index.tsx",
+          "hash": "17189541134656407214",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/routes/layout.tsx",
+          "hash": "3167953879468221686",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "core"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/routes/second/index.tsx",
+          "hash": "7432097836914091795",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/routes/service-worker.ts",
+          "hash": "6519991492550831346",
+          "deps": [
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/routes/styled-flower/flower.css.ts",
+          "hash": "8568416018995733629",
+          "deps": [
+            "npm:styled-vanilla-extract"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/routes/styled-flower/index.tsx",
+          "hash": "8216699902346103123",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/src/styles/colors.css.ts",
+          "hash": "9559634044873243645",
+          "deps": [
+            "npm:styled-vanilla-extract"
+          ]
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/tsconfig.app.json",
+          "hash": "3830819396057461311"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/tsconfig.json",
+          "hash": "10501919329726310043"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/tsconfig.spec.json",
+          "hash": "12411688542299444852"
+        },
+        {
+          "file": "apps/05-04-styles-css-in-js/vite.config.ts",
+          "hash": "14159929968100838536",
+          "deps": [
+            "npm:@builder.io/qwik",
+            "npm:@builder.io/qwik-city",
+            "npm:vite",
+            "npm:vite-tsconfig-paths",
+            "npm:qwik-nx",
+            "npm:styled-vanilla-extract"
+          ]
+        }
+      ]
+    }
+  }
+}
